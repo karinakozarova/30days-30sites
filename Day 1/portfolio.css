@@ -1,0 +1,24 @@
+body {
+    background-color: #7FFF00;
+    font-family: "Bookman Old Style";
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 500%;
+    text-decoration: blink;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+    text-decoration: blink;
+}
+
+.img-circle {
+    border-radius: 50%;
+    align-content: center;
+    width: 30%;
+    height: auto;
+}
