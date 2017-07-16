@@ -1,24 +1,71 @@
-body {
-    background-color: #7FFF00;
-    font-family: "Bookman Old Style";
-    align-content: center;
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: aqua;
+    position: relative;
+
 }
 
+body {
+    line-height: 1.8;
+
+}
 h1 {
-    text-align: center;
+    padding-top: 2%;
     font-size: 500%;
-    text-decoration: blink;
 }
 
 h2 {
-    text-align: center;
     font-size: 200%;
-    text-decoration: blink;
 }
 
 .img-circle {
+    display: block;
     border-radius: 50%;
     align-content: center;
+    margin: auto;
     width: 30%;
     height: auto;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.section-1{
+    text-align: center;
+    align-content: center;
+    background-color: #7FFF00;
+    font-family: "Bookman Old Style";
+
+}
+
+.section-2{
+    text-align: center;
+    align-content: center;
+    background-color: #7dc0ff;
+    font-family: "Bookman Old Style";
+}
+p{
+    font-size: 160%;
+}
+
+.last-p {
+    padding-bottom: 5%;
+}
+
+.more_me-list {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 160%;
+    list-style: none;
+}
+
+.hack-img {
+    align-content: center;
+    margin-left: 10%;
 }

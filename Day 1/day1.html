@@ -3,14 +3,58 @@
     <head>
         <title> About me </title>
         <link rel="stylesheet" type="text/css" href="portfolio.css">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
 
-        <h1> My portfolio </h1>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#me">Me</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#me">ME</a></li>
+                    <li><a href="#more">MORE ME</a></li>
+                    <li><a href="#end">END</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="section-1 text-center">
+        <h1 id = "me"> My portfolio </h1>
 
 		<h2> So who am I?</h2>
-        <img src="19366434_1385956134828239_5394078352220804585_n.jpg" class="img-circle" alt = "kari" \>
+        <img src="19366434_1385956134828239_5394078352220804585_n.jpg" class="img-circle" alt = "kari-pic" \>
+        <br> <br> <br>
 
+        <p> I am Kari. I love nature, martial arts and technology. </p>
+        <div class = "last-p text-center">
+            <p> In my free time listening to music and going out with friends is a must.</p>
+        </div>
+    </div>
+    <div class="section-2 text-center">
+        <h1 id = "more"> More me</h1> <br>
+        <h2>What I like about IT?</h2>
+<br>
+    <ul class = more_me-list>
+        <li> Freedom - you can create whatever you want</li>
+        <li> Open source </li>
+        <li> With everything you do, there is a chance you are changing someone's life</li>
+    </ul>
+        <br>
+        <img src="hacker.png"class="hack-img"/>
+    </div>
     </body>
     </html>
