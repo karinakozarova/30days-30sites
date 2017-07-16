@@ -6,9 +6,7 @@
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
-    background-color: aqua;
-    position: relative;
-
+    position: fixed;
 }
 
 body {
@@ -49,6 +47,11 @@ h2 {
     background-color: #7dc0ff;
     font-family: "Bookman Old Style";
 }
+
+footer {
+    text-align: center;
+}
+
 p{
     font-size: 160%;
 }
@@ -68,4 +71,25 @@ p{
 .hack-img {
     align-content: center;
     margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.thumbs-img {
+    align-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 23.5%;
+    height: auto;
+}
+
+a{
+    font-size: 200%;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: blue;
 }
