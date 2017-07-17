@@ -92,3 +92,12 @@ div figure {
 
 }
 
+.dresscode{
+    height: 50%;
+    float: right;
+}
+
+.bigger-p {
+    font-size: 250%;
+    float:left;
+}
