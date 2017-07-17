@@ -1,0 +1,60 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10%;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    position: fixed;
+}
+
+.width-fullscreen {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.header{
+    font-family: Open Sans Condensed,monospace;
+
+    font-size: 400%;
+}
+
+.to-right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+    padding-top: 2%;
+}
+body {
+    line-height: 1.8;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.to-right {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+h1 {
+    padding-top: 2%;
+    font-size: 500%;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+
+footer {
+    text-align: center;
+}
+
+p{
+    font-size: 160%;
+    padding-left: 10%;
+}
+
