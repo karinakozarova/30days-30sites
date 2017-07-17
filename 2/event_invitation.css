@@ -10,6 +10,13 @@
     position: fixed;
 }
 
+.info{
+    height: 15%;
+    align-content: center;
+    padding-left: 20%;
+}
+.div-test{text-align:center;}
+
 .width-fullscreen {
     width: 100%;
     margin-top: 5%;
@@ -58,3 +65,9 @@ p{
     padding-left: 10%;
 }
 
+#success_message{ display: none;}
+.info {
+    height: 15%;
+    align-content: center;
+    padding-left: 20%;
+}
