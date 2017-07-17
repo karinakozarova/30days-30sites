@@ -15,6 +15,7 @@
     align-content: center;
     padding-left: 20%;
 }
+
 .div-test{text-align:center;}
 
 .width-fullscreen {
@@ -24,7 +25,6 @@
 
 .header{
     font-family: Open Sans Condensed,monospace;
-
     font-size: 400%;
 }
 
@@ -35,15 +35,17 @@
     padding: 10px;
     padding-top: 2%;
 }
+
 body {
     line-height: 1.8;
     font-family: 'Open Sans Condensed', sans-serif;
-
 }
+
 .to-right {
     float: right;
     margin: 0 0 10px 10px;
 }
+
 h1 {
     padding-top: 2%;
     font-size: 500%;
@@ -89,16 +91,14 @@ div figure {
     display: block;
     margin: auto;
     width: 40%;
-
 }
 
 .dresscode{
     height: 50%;
-    float: right;
-    margin-bottom: 10%;
+    padding-left: 30%;
 }
 
 .bigger-p {
     font-size: 250%;
-    float:left;
+    padding-left: 30%;
 }
