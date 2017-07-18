@@ -1,12 +1,12 @@
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-    position: fixed;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     border: 0;
+     border-radius: 0;
+     margin-bottom: 0;
+     font-size: 12px;
+     letter-spacing: 5px;
+     position: fixed;
 }
 
 body {
@@ -19,7 +19,6 @@ p{
     font-size: 200%;
 }
 
-
 .header{
     font-size: 400%;
     font-family: 'Bellefair', serif;
@@ -31,14 +30,20 @@ p{
     height: auto;
 }
 
-a{
-    font-size: 200%;
+div.gallery {
+    margin: 5px;
+    align-content: center;
 }
 
-a:visited {
-    color: green;
+
+div.gallery img {
+    height: auto;
+    width: 60%;
+    margin-left: 20%;
+    padding-right: 5%;
 }
 
-a:active {
-    color: blue;
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
