@@ -40,10 +40,13 @@ div.gallery img {
     height: auto;
     width: 60%;
     margin-left: 20%;
-    padding-right: 5%;
 }
 
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+footer{
+    background-color: rgba(226, 226, 226, 0.51);
 }
