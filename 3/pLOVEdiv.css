@@ -1,0 +1,44 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    position: fixed;
+}
+
+body {
+    line-height: 1.8;
+    font-family: 'Bellefair', serif;
+}
+
+p{
+    font-family: 'Bellefair', serif;
+    font-size: 200%;
+}
+
+
+.header{
+    font-size: 400%;
+    font-family: 'Bellefair', serif;
+    text-align: center;
+}
+
+.plovediv{
+    width: 100%;
+    height: auto;
+}
+
+a{
+    font-size: 200%;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: blue;
+}
