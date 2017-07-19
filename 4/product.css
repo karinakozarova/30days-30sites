@@ -1,0 +1,42 @@
+body {
+    line-height: 1.8;
+    background-color: lightsteelblue !important;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+}
+
+p{
+    font-size: 200%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header {
+    text-align: center;
+    font-size: 400%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.mailer{
+    float: right;
+    height: 30%;
+}
+ul{
+    font-size: 200%;
+    list-style-position: inside;
+}
+li{
+    text-align: center;
+
+}
+
+.features{
+    background-color: rgba(28, 138, 248, 0.58);
+    border-radius: 45px;
+    color: floralwhite;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin-left: 20%;
+    margin-right: 30%;
+}
