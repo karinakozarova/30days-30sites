@@ -70,10 +70,13 @@ h2{
 }
 #first {
     width: 45%;
-    border: 1px solid red;
 }
+
 #second {
-    border: 1px solid green;
     width: 45%;
     float: right;
+}
+
+.comments {
+    background-color: rgba(184, 255, 254, 0.65);
 }
