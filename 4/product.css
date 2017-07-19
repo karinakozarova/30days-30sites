@@ -23,21 +23,14 @@ p{
     height: 30%;
 }
 ul{
-    font-size: 200%;
-    list-style-position: inside;
-}
-li{
-    text-align: center;
+    font-size: 250%;
+    list-style: none;
 }
 
-.features{
-    background-color: rgba(28, 138, 248, 0.58);
-    border-radius: 45px;
-    color: floralwhite;
-    margin-inside: 10%;
-    margin-outside: 10%;
-
-
+li img{
+    height: 20%;
+    padding-right: 2%;
+    padding-bottom: 5%;
 }
 
 .download{
@@ -55,4 +48,10 @@ li{
     height: auto;
     margin-right: -7%;
     margin-left: 15%;
+}
+
+.aligned {
+    display:flex;
+    align-items:center;
+    align-content: center;
 }
