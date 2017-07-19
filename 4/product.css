@@ -28,15 +28,31 @@ ul{
 }
 li{
     text-align: center;
-
 }
 
 .features{
     background-color: rgba(28, 138, 248, 0.58);
     border-radius: 45px;
     color: floralwhite;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    margin-left: 20%;
-    margin-right: 30%;
+    margin-inside: 10%;
+    margin-outside: 10%;
+
+
+}
+
+.download{
+    background-color: rgba(132, 255, 83, 0.47);
+    padding-bottom: 5%;
+}
+
+.row{
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+.row img{
+    width: 30%;
+    height: auto;
+    margin-right: -7%;
+    margin-left: 15%;
 }
