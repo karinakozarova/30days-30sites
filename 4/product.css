@@ -64,6 +64,8 @@ h2{
 #wrapper {
     width: 90%;
     margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
     overflow: auto;
 }
 #first {
