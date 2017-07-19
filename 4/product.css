@@ -55,3 +55,23 @@ li img{
     align-items:center;
     align-content: center;
 }
+
+h2{
+    text-align: center;
+    font-size: 150%;
+}
+
+#wrapper {
+    width: 90%;
+    margin-left: 5%;
+    overflow: auto;
+}
+#first {
+    width: 45%;
+    border: 1px solid red;
+}
+#second {
+    border: 1px solid green;
+    width: 45%;
+    float: right;
+}
