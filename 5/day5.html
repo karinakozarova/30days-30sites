@@ -11,20 +11,20 @@
     </head>
 
     <body>
-        <script>
-            if (screen.width <= 700) {
-             document.location = "day1.html";
-         }
-        </script>
+    <script>
+        if (screen.width <= 800) {
+            document.location = "mobile.html";
+        }
+    </script>
     <div class="image">
 
         <img src="food.jpg" alt="food" style="width: 100%" />
-        <h2><span>Welcome to MasterChef's page!</span></h2>
+        <h2 style="position: absolute"><span>Welcome to MasterChef's page!</span></h2>
 
 
     </div>
 
-<h1 style="padding-bottom: 1%"> Today's specials:</h1>
+    <h1 style="padding-bottom: 1%"> Today's specials:</h1>
     <div id="wrapper">
         <div id="first">
             <h1 style="padding-bottom: 3%;padding-top: 2%;background-color: #2A3132;color: aliceblue"> Lunch  </h1>
@@ -40,13 +40,13 @@
 
         <div id="second">
             <h1 style="padding-bottom: 3%;padding-top: 2%;background-color: #2A3132;color: aliceblue"> Dinner </h1>
-        <ul>
-            <li> Traditional Japanese Soup with dog meat</li>
-            <li>Mousse au Chocolat </li>
-            <li> Pain de Campagne </li>
-            <li> Hawaiian haystack </li>
-            <li> Cuisine of the Thirteen Colonies </li>
-        </ul>
+            <ul>
+                <li> Traditional Japanese Soup with dog meat</li>
+                <li>Mousse au Chocolat </li>
+                <li> Pain de Campagne </li>
+                <li> Hawaiian haystack </li>
+                <li> Cuisine of the Thirteen Colonies </li>
+            </ul>
 
         </div>
     </div>
@@ -57,11 +57,10 @@
             <h1 style="padding-bottom: 3%;padding-top: 2%;background-color: #2A3132;color: aliceblue"> Dessert  </h1>
             <ul>
                 <li> Traditional Canadian Pancakes</li>
-                <li> Zucchini Pizza </li>
-                <li> Green Salad with Kinoa and Lemon Juice</li>
-                <li> Salade Nicoise </li>
-                <li> Vegetarian sushi</li>
-                <li> Deep sea fish with Garlic bread and Sasa topping</li>
+                <li> Afreddo's Ice cream</li>
+                <li> Lemonade cake</li>
+                <li> Breadsticks</li>
+                <li> Goffretti </li>
 
             </ul>
         </div>
@@ -71,11 +70,42 @@
             <ul>
                 <li> Los Amico Tequilla Cockteil </li>
                 <li> Primo de Champagne </li>
-                <li> Hawaiian haystack </li>
-                <li> Cuisine of the Thirteen Colonies </li>
+                <li> Moscow Mule </li>
+                <li> Jack and coke </li>
+                <li> Lay down on the beach</li>
             </ul>
-
         </div>
     </div>
+
+    <br> <br>
+    <script>
+        // highlight current day on opeining hours
+        $(document).ready(function() {
+            $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+        });
+    </script>
+
+    <div class="container demo-bg">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="business-hours">
+                    <h2 class="title" style="float: left">Opening Hours</h2>
+                    <ul class="list-unstyled opening-hours">
+                        <li>Sunday <span class="pull-right">Closed</span></li>
+                        <li>Monday <span class="pull-right">9:00-22:00</span></li>
+                        <li>Tuesday <span class="pull-right">9:00-22:00</span></li>
+                        <li>Wednesday <span class="pull-right">9:00-22:00</span></li>
+                        <li>Thursday <span class="pull-right">9:00-22:00</span></li>
+                        <li>Friday <span class="pull-right">9:00-23:30</span></li>
+                        <li>Saturday <span class="pull-right">14:00-23:30</span></li>
+                    </ul>
+                </div>
+            </div>
+            <h1 style="padding: 3%;text-align: center"> We are waiting for you at Sesame street
+                123! Tell your bartender you want a "Spoofy drink" to get one beverage from us.
+                Feel free to call us for any questions you have:<br> +02738743249 </h1>
+        </div>
+    </div>
+    <br>
     </body>
     </html>
