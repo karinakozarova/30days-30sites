@@ -9,6 +9,14 @@ body {
     width: 100%;
 }
 
+p{
+    font-size: 200%;
+}
+
+h1{
+    font-size: 400% !important;
+    text-align: center;
+}
 h2 {
     position: absolute;
     top: 200px;
@@ -21,10 +29,36 @@ h2 {
 
 h2 span {
     color: white;
-    font-family: 'PT Sans Narrow', sans-serif !important;
     letter-spacing: -1px;
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(23, 23, 23, 0.7);
     background-size: 100%;
     padding: 10px;
+}
+
+#wrapper {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+#first {
+    width: 45%;
+    background-color: rgba(82, 82, 82, 0.27);
+    margin-top: -1.2%;
+}
+
+#second {
+    margin-top: -1.2%;
+    width: 45%;
+    float: right;
+    background-color: rgba(82, 82, 82, 0.27);
+}
+
+li{
+    font-size: 250%;
+    text-align: center;
+    list-style: none;
+    margin-left: -5%; /*remove space from list style */
 }
