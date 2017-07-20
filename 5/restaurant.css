@@ -1,0 +1,30 @@
+body {
+    line-height: 1.8;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+}
+
+.image {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+h2 {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 600% !important;
+
+}
+
+h2 span {
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(23, 23, 23, 0.7);
+    background-size: 100%;
+    padding: 10px;
+}
