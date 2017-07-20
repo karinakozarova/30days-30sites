@@ -1,0 +1,54 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <title> MasterChef </title>
+        <link rel="stylesheet" type="text/css" href="restaurant.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+    <script>
+        if (screen.width <= 800) {
+            document.location = "mobile.html";
+        }
+    </script>
+    <div class="image">
+
+        <img src="food_txt.jpg" alt="food" style="width: 100%" />
+
+
+    </div>
+
+    <script>
+        // highlight current day on opeining hours
+        $(document).ready(function() {
+            $('.opening-hours li').eq(new Date().getDay()).addClass('today');
+        });
+    </script>
+    <div class="container demo-bg">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="business-hours">
+                    <h2 class="title" style="float: left">Open Hours</h2>
+                    <ul class="list-unstyled opening-hours">
+                        <li>Sunday <span class="pull-right">Closed</span></li>
+                        <li>Monday <span class="pull-right">9:00-22:00</span></li>
+                        <li>Tuesday <span class="pull-right">9:00-22:00</span></li>
+                        <li>Wednesday <span class="pull-right">9:00-22:00</span></li>
+                        <li>Thursday <span class="pull-right">9:00-22:00</span></li>
+                        <li>Friday <span class="pull-right">9:00-23:30</span></li>
+                        <li>Saturday <span class="pull-right">14:00-23:30</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="food.jpg" alt="food" style="width: 100%" />
+
+    <br>
+    </body>
+    </html>
