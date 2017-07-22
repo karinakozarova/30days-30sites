@@ -1,0 +1,33 @@
+body {
+     line-height: 1.8;
+    font-family: 'Indie Flower', cursive;
+ }
+
+.image {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+p{
+    font-size: 200%;
+}
+
+h1{
+    font-size: 400% !important;
+    text-align: center;
+}
+h2 {
+    top: 200px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 600% !important;
+
+}
+
+.section1 p {
+  padding: 10%;
+    text-align: center;
+}
+
