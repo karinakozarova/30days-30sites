@@ -3,7 +3,6 @@ body {
     font-family: 'Indie Flower', cursive;
  }
 
-
 div {
     box-sizing: border-box;
     display: block;
@@ -77,6 +76,3 @@ blockquote p {
    padding-left: 30%;padding-right: 30%;
     max-width: 100%;
 }
-
-
-
