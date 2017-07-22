@@ -3,6 +3,7 @@ body {
     font-family: 'Indie Flower', cursive;
  }
 
+
 div {
     box-sizing: border-box;
     display: block;
@@ -70,6 +71,10 @@ blockquote p {
     padding-right: 12%;
     padding-bottom: 10%;
     background-color: whitesmoke;
+}
+
+.quotes p {
+    font-size: 150%
 }
 
 .buy{
