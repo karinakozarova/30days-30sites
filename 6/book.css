@@ -3,10 +3,19 @@ body {
     font-family: 'Indie Flower', cursive;
  }
 
-.image {
-    position: relative;
-    height: auto;
-    width: 100%;
+
+div {
+    box-sizing: border-box;
+    display: block;
+}
+
+h1{
+    font-family: "Pacifico";
+}
+
+.name{
+    font-family: "Pacifico";
+
 }
 
 p{
@@ -22,7 +31,7 @@ h2 {
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: 600% !important;
+    font-size: 300%;
 
 }
 
@@ -60,5 +69,13 @@ blockquote p {
 .quotes{
     padding-left: 12%;
     padding-right: 12%;
+    padding-bottom: 10%;
     background-color: whitesmoke;
 }
+
+.buy{
+   padding-left: 30%;
+}
+
+
+
