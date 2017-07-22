@@ -31,3 +31,34 @@ h2 {
     text-align: center;
 }
 
+blockquote {
+    margin: 1em 20px;
+    padding-left: 50px;
+    background-color: white;
+}
+
+blockquote p:first-letter {
+    float: left;
+    margin: .2em .3em .1em 0;
+    font-family: "Monotype Corsiva", "Apple Chancery", fantasy;
+    font-size: 220%;
+    font-weight: bold;
+}
+
+blockquote:before {
+    color:  #b4b4b4;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+
+.quotes{
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: whitesmoke;
+}
