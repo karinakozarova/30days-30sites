@@ -1,0 +1,112 @@
+body {
+    line-height: 1.8;
+    font-family: 'Playfair Display', serif;
+}
+
+div {
+    box-sizing: border-box;
+    display: block;
+}
+
+div p{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+p{
+    font-size: 200%;
+}
+
+h2 {
+    top: 200px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 500% !important;
+}
+
+.mobile_h2 {
+
+    text-align: center;
+}
+.mobile_h2 span {
+    color: white;
+    letter-spacing: -1px;
+    width: 100vw;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(23, 23, 23, 0.7);
+    background-size: 100%;
+    margin-top: -50%;
+}
+h2 span {
+    color: white;
+    letter-spacing: -1px;
+    width: 100vw;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(23, 23, 23, 0.7);
+    background-size: 100%;
+    padding: 10px;
+}
+
+h1{
+    font-size: 400% !important;
+    text-align: center;
+}
+
+.typewriter h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    text-align: center;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+}
+
+
+blockquote {
+    margin: 1em 20px;
+    padding-left: 50px;
+    background-color: white;
+}
+
+blockquote:before {
+    color:  #b4b4b4;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+.navbar {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    margin-bottom: 10%;
+    font-size: 130%;
+    letter-spacing: 5px;
+    position: fixed;
+}
+
+.image {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
