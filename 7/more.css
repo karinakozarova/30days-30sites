@@ -1,7 +1,7 @@
 body {
-    line-height: 1.8;
-    font-family: 'Playfair Display', serif;
-}
+     line-height: 1.8;
+     font-family: 'Playfair Display', serif;
+ }
 
 div {
     box-sizing: border-box;
@@ -109,4 +109,27 @@ blockquote p {
     position: relative;
     height: auto;
     width: 100%;
+}
+
+#wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+}
+#first {
+    width: 35%;
+    background-color: rgba(82, 82, 82, 0.27);
+    margin-top: -2%;
+    float: left;
+    margin-left: 15%;
+    margin-right: -15%;
+}
+
+#second {
+    margin-top: -2%;
+    width: 35%;
+    height: auto;
+    float: right;
+    background-color: rgba(82, 82, 82, 0.27);
 }
