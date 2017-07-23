@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="more.css">
+<DOCTYPE html>
+    <html>
+    <head>
+        <title> The Notebook </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="more.css">
+
+        <script>
+            function showText(id,delay){
+                var elem=document.getElementById(id);
+                setTimeout(function(){elem.style.visibility='visible';},delay*1000)
+            }
+            window.onload=function(){
+                showText('delayedText1',0);
+            }
+        </script>
+
+    </head>
+
+    <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#RECAP">RECAP</a></li>
+                    <li> <a href="#REGISTER"> REGISTER </a> </li>
+                    <li><a href="#Details">EVENT DETAILS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="image">
+
+        <img src="nb.jpg" alt="the notebook" style="width: 100vw" />
+        <div class="typewriter" id = "RECAP">
+            <h2 style="position: absolute;padding-top: 25%;width: 100vw"> <span> The Notebook Movie  by Nicholas Sparks </span> </h2>
+        </div>
+
+    </div>
+
+
+
+        <div id="delayedText1" style="visibility:hidden">    <p> The Notebook is a contemporary love story set in the pre- and post-World War II era. Noah and Allie spend a wonderful summer together, but her family and the socio-economic realities of the time prevent them from being together. Although Noah attempts to keep in contact with Allie after they are forced to separate, his letters go unanswered. Eventually, Noah professes his undying and eternal love in one final letter. Noah travels north to find gainful employment and to escape the ghost of Allie, and eventually he goes off to war. After serving his country, he returns home to restore an old farmhouse. A newspaper article about his endeavor catches Allie's eye, and 14 years after she last saw Noah, Allie returns to him. The only problem is she is engaged to another man. After spending two wonderful reunion days together, Allie must decide between the two men that she loves.
+
+            This story is framed by a contemporary man who is reading to a woman who suffers from Alzheimer's. The woman is understood to be Allie . . . but which of her two loves is the man reading to her?</p>
+        </div>
+
+    </body>
+    </html>
