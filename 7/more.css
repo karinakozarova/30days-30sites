@@ -19,7 +19,7 @@ p{
 }
 
 h2 {
-    top: 200px;
+    top: 30%;
     width: 100%;
     height: auto;
     text-align: center;
@@ -37,7 +37,6 @@ h2 {
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(23, 23, 23, 0.7);
     background-size: 100%;
-    margin-top: -50%;
 }
 h2 span {
     color: white;
@@ -46,7 +45,6 @@ h2 span {
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(23, 23, 23, 0.7);
     background-size: 100%;
-    padding: 10px;
 }
 
 h1{
@@ -112,4 +110,32 @@ h1{
     height: auto;
     float: right;
     background-color: rgba(82, 82, 82, 0.27);
+}
+
+.mov-ttl{
+    position: absolute;
+    padding-top: 25%;
+    width: 100vw;
+}
+@media only screen and (max-width: 700px) {
+   p{
+       font-size: 120%;
+   }
+    .mov-ttl{
+        position: absolute;
+        padding-top: 5%;
+        width: 100vw;
+    }
+
+    h2 {
+        top: 70%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 160% !important;
+    }
+    h1{
+        font-size: 200% !important;
+        text-align: center;
+    }
 }
