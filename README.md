@@ -6,3 +6,4 @@
 <a href = "http://karinakozarova.me/30days-30sites/4/day4.html"> YourMail (day four) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/5/day5.html"> MasterChef (day five) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/6/day6.html"> A man called Ove (day six) </a> <br>
+<a href = "http://karinakozarova.me/30days-30sites/7/day7.html"> The Notebook (day seven) </a> <br>
