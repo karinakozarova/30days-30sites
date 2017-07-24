@@ -1,6 +1,5 @@
 #lovato{
     height: 50vw;
-    float: left;
 }
 
 body {
@@ -13,7 +12,7 @@ body {
     text-align: center;
     color: white;
     padding-left: 10%;
-    font-size: 700%;
+    font-size: 400%;
 }
 
 #info {
