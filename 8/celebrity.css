@@ -24,8 +24,6 @@ body {
     padding: 10%;
     margin-right: -15%;
     font-size: 200%;
-    justify-content: center;
-    align-content: center;
     text-align: center;
 }
 
@@ -46,11 +44,14 @@ body {
 @media only screen and (max-width: 700px) {
         #lovato{
             align-content: center;
-            height: 100vw;
+            height: 68vw;
         }
 
         h1{
             text-align: center;
-
+        }
+        p{
+            font-size: 400%;
+            margin-right: 0%;
         }
 }
