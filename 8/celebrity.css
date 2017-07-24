@@ -1,0 +1,32 @@
+#lovato{
+    padding-left: 15%;
+    height: 50vw;
+    float: left;
+}
+
+body {
+    font-family: 'Courgette', cursive;
+    background-color: black;
+}
+
+h1{
+    font-size: 500%;
+}
+
+#title{
+    float: right;
+    padding-top: 10%;
+    text-align: center;
+    color: white;
+}
+@media only screen and (max-width: 700px) {
+        #lovato{
+            align-content: center;
+            height: 100vw;
+        }
+
+        h1{
+            text-align: center;
+
+        }
+}
