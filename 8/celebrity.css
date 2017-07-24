@@ -1,31 +1,23 @@
 #lovato{
-    padding-left: 15%;
     height: 50vw;
     float: left;
 }
 
 body {
     font-family: 'Courgette', cursive;
-    background-color: black;
 }
 
-h1{
-    font-size: 500%;
-}
-
-h1 small {
-    margin-right: 10% !important;
-}
 #title{
-    float: right;
+    float: left;
     padding-top: 20%;
     text-align: center;
     color: white;
+    padding-left: 10%;
+    font-size: 700%;
 }
 
 #info {
     background-color: #4c3a7b;
-    width: 100%;
 }
 
 #info p{
@@ -38,7 +30,15 @@ h1 small {
     text-align: center;
 }
 
+#vids {
+    margin: 7%;
+}
 
+#music {
+    background-color: greenyellow;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
 #info img{
     float: right;
     width: 10%;
