@@ -13,11 +13,36 @@ h1{
     font-size: 500%;
 }
 
+h1 small {
+    margin-right: 10% !important;
+}
 #title{
     float: right;
-    padding-top: 10%;
+    padding-top: 20%;
     text-align: center;
     color: white;
+}
+
+#info {
+    background-color: #4c3a7b;
+    width: 100%;
+}
+
+#info p{
+    color: white;
+    padding: 10%;
+    margin-right: -15%;
+    font-size: 200%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+#info img{
+    float: right;
+    width: 10%;
+    padding-top: 6%;
 }
 @media only screen and (max-width: 700px) {
         #lovato{
