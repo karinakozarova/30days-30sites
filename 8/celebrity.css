@@ -40,22 +40,3 @@ body {
     width: 10%;
     padding-top: 6%;
 }
-@media only screen and (max-width: 700px) {
-        #lovato{
-            align-content: center;
-            height: 68vw;
-        }
-
-        h1{
-            text-align: center;
-        }
-        p{
-            font-size: 17px;
-            margin-right: 0%;
-            padding-right: 10%;
-        }
-
-        info {
-            font-size: 500% !important;
-        }
-}
