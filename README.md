@@ -9,3 +9,4 @@
 <a href = "http://karinakozarova.me/30days-30sites/7/day7.html"> The Notebook (day seven) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/8/day8.html"> Demi Lovato (day eight) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/9/day9.html"> Game (day nine) </a> <br>
+<a href = "http://karinakozarova.me/30days-30sites/10/day10.html"> Photographer (day ten) </a> <br>
