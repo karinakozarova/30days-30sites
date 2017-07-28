@@ -82,11 +82,11 @@ h1 {
     margin: 10px 0
 }
 
-.w3-wide {
+.wide {
     letter-spacing: 4px
 }
 
-.w3-button {
+.button {
     border: none;
     display: inline-block;
     outline: 0;
@@ -101,7 +101,7 @@ h1 {
     white-space: nowrap
 }
 
-.w3-button {
+.button {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -110,7 +110,7 @@ h1 {
     user-select: none
 }
 
-.w3-button:disabled {
+.button:disabled {
     cursor: not-allowed;
     opacity: 0.3
 }
@@ -119,7 +119,7 @@ h1 {
     pointer-events: none
 }
 
-.w3-input {
+.input {
     padding: 8px;
     display: block;
     border: none;
@@ -127,7 +127,7 @@ h1 {
     width: 100%
 }
 
-.w3-modal {
+.modal {
     z-index: 3;
     display: none;
     padding-top: 100px;
@@ -141,7 +141,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.4)
 }
 
-.w3-modal-content {
+.modal-content {
     margin: auto;
     background-color: #fff;
     position: relative;
@@ -150,69 +150,69 @@ h1 {
     width: 600px
 }
 
-.w3-block {
+.block {
     display: block;
     width: 100%
 }
 
-.w3-container:after,
-.w3-container:before,
-.w3-row:after,
-.w3-row:before {
+.container:after,
+.container:before,
+.row:after,
+.row:before {
     content: "";
     display: table;
     clear: both
 }
 
-.w3-half {
+.half {
     float: left;
     width: 100%
 }
 
 @media (min-width:601px) {
-    .w3-half {
+    .half {
         width: 49.99999%
     }
 }
 
 @media (max-width:600px) {
-    .w3-modal-content {
+    .modal-content {
         margin: 0 10px;
         width: auto!important
     }
-    .w3-modal {
+    .modal {
         padding-top: 30px
     }
 }
 
 @media (max-width:768px) {
-    .w3-modal-content {
+    .modal-content {
         width: 500px
     }
-    .w3-modal {
+    .modal {
         padding-top: 50px
     }
 }
 
 @media (min-width:993px) {
-    .w3-modal-content {
+    .modal-content {
         width: 900px
     }
 }
 
-.w3-round {
+.round {
     border-radius: 4px
 }
 
-.w3-container {
+.container {
     padding: 0.01em 16px
 }
 
-.w3-card-4 {
+.card-4 {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-.w3-animate-zoom {
+.animate-zoom {
     animation: animatezoom 0.6s
 }
 
@@ -225,36 +225,36 @@ h1 {
     }
 }
 
-.w3-opacity {
+.opacity {
     opacity: 0.60
 }
 
-.w3-hover-opacity-off:hover {
+.hover-opacity-off:hover {
     opacity: 1
 }
 
-.w3-large {
+.large {
     font-size: 18px!important
 }
 
-.w3-xlarge {
+.xlarge {
     font-size: 24px!important
 }
 
-.w3-center {
+.center {
     text-align: center!important
 }
 
-.w3-border {
+.border {
     border: 1px solid #ccc!important
 }
 
-.w3-padding-64 {
+.padding-64 {
     padding-top: 64px!important;
     padding-bottom: 64px!important
 }
 
-.w3-button:hover {
+.button:hover {
     color: #000!important;
     background-color: #ccc!important
 }
@@ -262,22 +262,225 @@ h1 {
 
 /* Colors */
 
-.w3-green {
+.green {
     color: #fff!important;
     background-color: #4CAF50!important
 }
 
-.w3-red {
+.red {
     color: #fff!important;
     background-color: #f44336!important
 }
 
-.w3-white {
+.white {
     color: #000!important;
     background-color: #fff!important
 }
 
-.w3-pale-red {
+.pale-red {
     color: #000!important;
     background-color: #ffdddd!important
 }
+
+h1{
+    text-align: center;
+}
+
+h2 {
+    top: 200px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 600% !important;
+}
+
+.mobile_h2 {
+
+    text-align: center;
+}
+.mobile_h2 span {
+    color: white;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(23, 23, 23, 0.7);
+    background-size: 100%;
+    margin-top: -50%;
+}
+h2 span {
+    color: white;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(23, 23, 23, 0.7);
+    background-size: 100%;
+    padding: 10px;
+}
+
+/* W3.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
+
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+img {
+    border-style: none
+}
+
+button,
+input {
+    font: inherit;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button {
+    text-transform: none
+}
+
+button,
+html [type=button] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+
+/* End extract */
+
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h1,
+h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.w3-wide {
+    letter-spacing: 4px
+}
+
+img {
+    margin-bottom: -5px
+}
+
+:disabled * {
+    pointer-events: none
+}
+
+.w3-container:after,
+.w3-container:before,
+.w3-row:after,
+.w3-row:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.w3-third {
+    float: left;
+    width: 100%
+}
+
+@media (min-width:601px) {
+    .w3-third {
+        width: 33.33333%
+    }
+}
+
+.w3-content {
+    max-width: 980px;
+    margin: auto
+}
+
+.w3-round {
+    border-radius: 4px
+}
+
+.w3-container {
+    padding: 0.01em 16px
+}
+
+.w3-opacity {
+    opacity: 0.60
+}
+
+.w3-justify {
+    text-align: justify!important
+}
+
+.w3-center {
+    text-align: center!important
+}
+
+.w3-margin-bottom {
+    margin-bottom: 16px!important
+}
+
+.w3-padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important
+}
+
+.w3-padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+
