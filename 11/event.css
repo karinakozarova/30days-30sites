@@ -1,705 +1,867 @@
-html {
-    box-sizing: border-box
+html
+{
+    box-sizing: border-box;
 }
 
 *,
 *:before,
-*:after {
-    box-sizing: inherit
+*:after
+{
+    box-sizing: inherit;
 }
 
-html {
+html
+{
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
 
-body {
-    margin: 0
+body
+{
+    margin: 0;
 }
 
 button,
-input {
+input
+{
     font: inherit;
-    margin: 0
+
+    margin: 0;
 }
 
 button,
-input {
-    overflow: visible
+input
+{
+    overflow: visible;
 }
 
-button {
-    text-transform: none
+button
+{
+    text-transform: none;
 }
 
 button,
-html [type=button] {
-    -webkit-appearance: button
+html [type=button]
+{
+    -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner {
+[type=button]::-moz-focus-inner
+{
+    padding: 0;
+
     border-style: none;
-    padding: 0
 }
 
 button:-moz-focusring,
-[type=button]:-moz-focusring {
-    outline: 1px dotted ButtonText
+[type=button]:-moz-focusring
+{
+    outline: 1px dotted ButtonText;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder
+{
+    opacity: .54;
     color: inherit;
-    opacity: 0.54
 }
 
-::-webkit-file-upload-button {
+::-webkit-file-upload-button
+{
+    font: inherit;
+
     -webkit-appearance: button;
-    font: inherit
 }
 
 
 /* End extract */
 
 html,
-body {
+body
+{
     font-family: Verdana, sans-serif;
     font-size: 15px;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
-html {
-    overflow-x: hidden
+html
+{
+    overflow-x: hidden;
 }
 
-h1 {
-    font-size: 36px
+h1
+{
+    font-size: 36px;
 }
 
-h1 {
-    font-family: "Segoe UI", Arial, sans-serif;
+h1
+{
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-weight: 400;
-    margin: 10px 0
+
+    margin: 10px 0;
 }
 
-.wide {
-    letter-spacing: 4px
+.wide
+{
+    letter-spacing: 4px;
 }
 
-.button {
-    border: none;
+.button
+{
     display: inline-block;
-    outline: 0;
-    padding: 8px 16px;
-    vertical-align: middle;
     overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
+
+    padding: 8px 16px;
+
     cursor: pointer;
-    white-space: nowrap
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: inherit;
+    border: none;
+    outline: 0;
+    background-color: inherit;
 }
 
-.button {
-    -webkit-touch-callout: none;
+.button
+{
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
 }
 
-.button:disabled {
+.button:disabled
+{
     cursor: not-allowed;
-    opacity: 0.3
+
+    opacity: .3;
 }
 
-:disabled * {
-    pointer-events: none
+:disabled *
+{
+    pointer-events: none;
 }
 
-.input {
-    padding: 8px;
+.input
+{
     display: block;
+
+    width: 100%;
+    padding: 8px;
+
     border: none;
     border-bottom: 1px solid #ccc;
-    width: 100%
 }
 
-.modal {
-    z-index: 3;
-    display: none;
-    padding-top: 100px;
+.modal
+{
     position: fixed;
-    left: 0;
+    z-index: 3;
     top: 0;
+    left: 0;
+
+    display: none;
+    overflow: auto;
+
     width: 100%;
     height: 100%;
-    overflow: auto;
+    padding-top: 100px;
+
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4)
+    background-color: rgba(0, 0, 0, .4);
 }
 
-.modal-content {
-    margin: auto;
-    background-color: #fff;
+.modal-content
+{
     position: relative;
+
+    width: 600px;
+    margin: auto;
     padding: 0;
+
     outline: 0;
-    width: 600px
+    background-color: #fff;
 }
 
-.block {
+.block
+{
     display: block;
-    width: 100%
+
+    width: 100%;
 }
 
 .container:after,
 .container:before,
 .row:after,
-.row:before {
-    content: "";
+.row:before
+{
     display: table;
-    clear: both
+    clear: both;
+
+    content: '';
 }
 
-.half {
+.half
+{
     float: left;
-    width: 100%
+
+    width: 100%;
 }
 
-@media (min-width:601px) {
-    .half {
-        width: 49.99999%
+@media (min-width:601px)
+{
+    .half
+    {
+        width: 49.99999%;
     }
 }
 
-@media (max-width:600px) {
-    .modal-content {
+@media (max-width:600px)
+{
+    .modal-content
+    {
+        width: auto!important;
         margin: 0 10px;
-        width: auto!important
     }
-    .modal {
-        padding-top: 30px
-    }
-}
-
-@media (max-width:768px) {
-    .modal-content {
-        width: 500px
-    }
-    .modal {
-        padding-top: 50px
+    .modal
+    {
+        padding-top: 30px;
     }
 }
 
-@media (min-width:993px) {
-    .modal-content {
-        width: 900px
+@media (max-width:768px)
+{
+    .modal-content
+    {
+        width: 500px;
+    }
+    .modal
+    {
+        padding-top: 50px;
     }
 }
 
-.round {
-    border-radius: 4px
-}
-
-.container {
-    padding: 0.01em 16px
-}
-
-.card-4 {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
-}
-
-.animate-zoom {
-    animation: animatezoom 0.6s
-}
-
-@keyframes animatezoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
+@media (min-width:993px)
+{
+    .modal-content
+    {
+        width: 900px;
     }
 }
 
-.opacity {
-    opacity: 0.60
+.round
+{
+    border-radius: 4px;
 }
 
-.hover-opacity-off:hover {
-    opacity: 1
+.container
+{
+    padding: .01em 16px;
 }
 
-.large {
-    font-size: 18px!important
+.card-4
+{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2), 0 4px 20px 0 rgba(0, 0, 0, .19);
 }
 
-.xlarge {
-    font-size: 24px!important
+.animate-zoom
+{
+    animation: animatezoom .6s;
 }
 
-.center {
-    text-align: center!important
+@keyframes animatezoom
+{
+    from
+    {
+        transform: scale(0);
+    }
+    to
+    {
+        transform: scale(1);
+    }
 }
 
-.border {
-    border: 1px solid #ccc!important
+.opacity
+{
+    opacity: .60;
 }
 
-.padding-64 {
+.hover-opacity-off:hover
+{
+    opacity: 1;
+}
+
+.large
+{
+    font-size: 18px!important;
+}
+
+.xlarge
+{
+    font-size: 24px!important;
+}
+
+.center
+{
+    text-align: center!important;
+}
+
+.border
+{
+    border: 1px solid #ccc!important;
+}
+
+.padding-64
+{
     padding-top: 64px!important;
-    padding-bottom: 64px!important
+    padding-bottom: 64px!important;
 }
 
-.button:hover {
+.button:hover
+{
     color: #000!important;
-    background-color: #ccc!important
+    background-color: #ccc!important;
 }
 
 
 /* Colors */
 
-.green {
+.green
+{
     color: #fff!important;
-    background-color: #4CAF50!important
+    background-color: #4caf50!important;
 }
 
-.red {
+.red
+{
     color: #fff!important;
-    background-color: #f44336!important
+    background-color: #f44336!important;
 }
 
-.white {
+.white
+{
     color: #000!important;
-    background-color: #fff!important
+    background-color: #fff!important;
 }
 
-.pale-red {
+.pale-red
+{
     color: #000!important;
-    background-color: #ffdddd!important
+    background-color: #d3d3d3;
 }
 
-h1{
+h1
+{
     text-align: center;
 }
 
-h2 {
+h2
+{
+    font-size: 400% !important;
+
     top: 200px;
+
     width: 100%;
     height: auto;
-    text-align: center;
-    font-size: 600% !important;
-}
-
-.mobile_h2 {
 
     text-align: center;
 }
-.mobile_h2 span {
-    color: white;
-    letter-spacing: -1px;
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(23, 23, 23, 0.7);
-    background-size: 100%;
-    margin-top: -50%;
-}
-h2 span {
-    color: white;
-    letter-spacing: -1px;
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(23, 23, 23, 0.7);
-    background-size: 100%;
+h2 span
+{
     padding: 10px;
+
+    letter-spacing: -1px;
+
+    color: white;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(23, 23, 23, .7);
+    background-size: 100%;
 }
 
-/* W3.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
-
-html {
-    box-sizing: border-box
+html
+{
+    box-sizing: border-box;
 }
 
 *,
 *:before,
-*:after {
-    box-sizing: inherit
+*:after
+{
+    box-sizing: inherit;
 }
 
-
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-
-html {
+html
+{
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
 
-body {
-    margin: 0
+body
+{
+    margin: 0;
 }
 
-img {
-    border-style: none
+img
+{
+    border-style: none;
 }
 
 button,
-input {
+input
+{
     font: inherit;
-    margin: 0
+
+    margin: 0;
 }
 
 button,
-input {
-    overflow: visible
+input
+{
+    overflow: visible;
 }
 
-button {
-    text-transform: none
+button
+{
+    text-transform: none;
 }
 
 button,
-html [type=button] {
-    -webkit-appearance: button
+html [type=button]
+{
+    -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner {
+[type=button]::-moz-focus-inner
+{
+    padding: 0;
+
     border-style: none;
-    padding: 0
 }
 
 button:-moz-focusring,
-[type=button]:-moz-focusring {
-    outline: 1px dotted ButtonText
+[type=button]:-moz-focusring
+{
+    outline: 1px dotted ButtonText;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder
+{
+    opacity: .54;
     color: inherit;
-    opacity: 0.54
 }
 
-::-webkit-file-upload-button {
+::-webkit-file-upload-button
+{
+    font: inherit;
+
     -webkit-appearance: button;
-    font: inherit
 }
 
 
 /* End extract */
 
 html,
-body {
+body
+{
     font-family: Verdana, sans-serif;
     font-size: 15px;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
-html {
-    overflow-x: hidden
+html
+{
+    overflow-x: hidden;
 }
 
-h1 {
-    font-size: 36px
+h1
+{
+    font-size: 36px;
 }
 
-h2 {
-    font-size: 30px
+h2
+{
+    font-size: 30px;
 }
 
 h1,
-h2 {
-    font-family: "Segoe UI", Arial, sans-serif;
+h2
+{
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-weight: 400;
-    margin: 10px 0
+
+    margin: 10px 0;
 }
 
-.w3-wide {
-    letter-spacing: 4px
+.wide
+{
+    letter-spacing: 4px;
 }
 
-img {
-    margin-bottom: -5px
+img
+{
+    margin-bottom: -5px;
 }
 
-:disabled * {
-    pointer-events: none
+:disabled *
+{
+    pointer-events: none;
 }
 
-.w3-container:after,
-.w3-container:before,
-.w3-row:after,
-.w3-row:before {
-    content: "";
+.container:after,
+.container:before,
+.row:after,
+.row:before
+{
     display: table;
-    clear: both
+    clear: both;
+
+    content: '';
 }
 
-.w3-third {
+.third
+{
     float: left;
-    width: 100%
+
+    width: 100%;
 }
 
-@media (min-width:601px) {
-    .w3-third {
-        width: 33.33333%
+@media (min-width:601px)
+{
+    .third
+    {
+        width: 33.33333%;
     }
 }
 
-.w3-content {
+.content
+{
     max-width: 980px;
-    margin: auto
+    margin: auto;
 }
 
-.w3-round {
-    border-radius: 4px
+.round
+{
+    border-radius: 4px;
 }
 
-.w3-container {
-    padding: 0.01em 16px
+.container
+{
+    padding: .01em 16px;
 }
 
-.w3-opacity {
-    opacity: 0.60
+.opacity
+{
+    opacity: .60;
 }
 
-.w3-justify {
-    text-align: justify!important
+.justify
+{
+    text-align: justify!important;
 }
 
-.w3-center {
-    text-align: center!important
+.center
+{
+    text-align: center!important;
 }
 
-.w3-margin-bottom {
-    margin-bottom: 16px!important
+.margin-bottom
+{
+    margin-bottom: 16px!important;
 }
 
-.w3-padding-32 {
+.padding-32
+{
     padding-top: 32px!important;
-    padding-bottom: 32px!important
+    padding-bottom: 32px!important;
 }
 
-.w3-padding-64 {
+.padding-64
+{
     padding-top: 64px!important;
-    padding-bottom: 64px!important
+    padding-bottom: 64px!important;
 }
 
 
-html {
-    box-sizing: border-box
+html
+{
+    box-sizing: border-box;
 }
 
 *,
 *:before,
-*:after {
-    box-sizing: inherit
+*:after
+{
+    box-sizing: inherit;
 }
 
 
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 
-html {
+html
+{
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
 
-body {
-    margin: 0
+body
+{
+    margin: 0;
 }
 
 button,
-input {
+input
+{
     font: inherit;
-    margin: 0
+
+    margin: 0;
 }
 
 button,
-input {
-    overflow: visible
+input
+{
+    overflow: visible;
 }
 
-button {
-    text-transform: none
+button
+{
+    text-transform: none;
 }
 
 button,
-[type=submit] {
-    -webkit-appearance: button
+[type=submit]
+{
+    -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type=submit]::-moz-focus-inner
+{
+    padding: 0;
+
     border-style: none;
-    padding: 0
 }
 
 button:-moz-focusring,
-[type=submit]:-moz-focusring {
-    outline: 1px dotted ButtonText
+[type=submit]:-moz-focusring
+{
+    outline: 1px dotted ButtonText;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder
+{
+    opacity: .54;
     color: inherit;
-    opacity: 0.54
 }
 
-::-webkit-file-upload-button {
+::-webkit-file-upload-button
+{
+    font: inherit;
+
     -webkit-appearance: button;
-    font: inherit
 }
 
 
 /* End extract */
 
 html,
-body {
+body
+{
     font-family: Verdana, sans-serif;
     font-size: 15px;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
-html {
-    overflow-x: hidden
+html
+{
+    overflow-x: hidden;
 }
 
-h2 {
-    font-size: 30px
+h2
+{
+    font-size: 30px;
 }
 
-h2 {
-    font-family: "Segoe UI", Arial, sans-serif;
+h2
+{
+    font-family: 'Segoe UI', Arial, sans-serif;
     font-weight: 400;
-    margin: 10px 0
+
+    margin: 10px 0;
 }
 
-.w3-wide {
-    letter-spacing: 4px
+.wide
+{
+    letter-spacing: 4px;
 }
 
-.w3-button {
-    border: none;
+.button
+{
     display: inline-block;
-    outline: 0;
-    padding: 8px 16px;
-    vertical-align: middle;
     overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
+
+    padding: 8px 16px;
+
     cursor: pointer;
-    white-space: nowrap
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: inherit;
+    border: none;
+    outline: 0;
+    background-color: inherit;
 }
 
-.w3-button {
-    -webkit-touch-callout: none;
+.button
+{
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
 }
 
-.w3-button:disabled {
+.button:disabled
+{
     cursor: not-allowed;
-    opacity: 0.3
+
+    opacity: .3;
 }
 
-:disabled * {
-    pointer-events: none
+:disabled *
+{
+    pointer-events: none;
 }
 
-.w3-input {
-    padding: 8px;
+.input
+{
     display: block;
+
+    width: 100%;
+    padding: 8px;
+
     border: none;
     border-bottom: 1px solid #ccc;
-    width: 100%
 }
 
-.w3-container:after,
-.w3-container:before,
-.w3-row:after,
-.w3-row:before,
-.w3-row-padding:after,
-.w3-row-padding:before {
-    content: "";
+.container:after,
+.container:before,
+.row:after,
+.row:before,
+.row-padding:after,
+.row-padding:before
+{
     display: table;
-    clear: both
+    clear: both;
+
+    content: '';
 }
 
-.w3-col,
-.w3-half {
+.col,
+.half
+{
     float: left;
-    width: 100%
+
+    width: 100%;
 }
 
-@media (min-width:601px) {
-    .w3-col.m6,
-    .w3-half {
-        width: 49.99999%
+@media (min-width:601px)
+{
+    .col.m6,
+    .half
+    {
+        width: 49.99999%;
     }
 }
 
-.w3-content {
+.content
+{
     max-width: 980px;
-    margin: auto
+    margin: auto;
 }
 
-.w3-row-padding,
-.w3-row-padding>.w3-half {
-    padding: 0 8px
+.row-padding,
+.row-padding > .half
+{
+    padding: 0 8px;
 }
 
-.w3-container {
-    padding: 0.01em 16px
+.container
+{
+    padding: .01em 16px;
 }
 
-.w3-opacity {
-    opacity: 0.60
+.opacity
+{
+    opacity: .60;
 }
 
-.w3-large {
-    font-size: 18px!important
+.large
+{
+    font-size: 18px!important;
 }
 
-.w3-center {
-    text-align: center!important
+.center
+{
+    text-align: center!important;
 }
 
-.w3-border {
-    border: 1px solid #ccc!important
+.border
+{
+    border: 1px solid #ccc!important;
 }
 
-.w3-section {
+.section
+{
     margin-top: 16px!important;
-    margin-bottom: 16px!important
+    margin-bottom: 16px!important;
 }
 
-.w3-margin-bottom {
-    margin-bottom: 16px!important
+.margin-bottom
+{
+    margin-bottom: 16px!important;
 }
 
-.w3-padding-32 {
+.padding-32
+{
     padding-top: 32px!important;
-    padding-bottom: 32px!important
+    padding-bottom: 32px!important;
 }
 
-.w3-padding-64 {
+.padding-64
+{
     padding-top: 64px!important;
-    padding-bottom: 64px!important
+    padding-bottom: 64px!important;
 }
 
-.w3-right {
-    float: right!important
+.right
+{
+    float: right!important;
 }
 
-.w3-button:hover {
+.button:hover
+{
     color: #000!important;
-    background-color: #ccc!important
+    background-color: #ccc!important;
 }
 
-.w3-black {
+
+/* Colors */
+
+.black
+{
     color: #fff!important;
-    background-color: #000!important
+    background-color: #000!important;
 }
+
