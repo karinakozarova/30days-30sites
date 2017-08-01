@@ -11,5 +11,8 @@
 <a href = "http://karinakozarova.me/30days-30sites/9/day9.html"> Game (day nine) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/10/day10.html"> Photographer (day ten) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/11/day11.html"> Event (day eleven) </a> <br>
+/*
 <a href = "http://karinakozarova.me/30days-30sites/12/day12.html"> Club (day twelve) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/13/day13.html"> Beverage (day thirteen) </a> 
+<a href = "http://karinakozarova.me/30days-30sites/14/day14.html"> Printing company (day fourteen) </a> 
+*/
