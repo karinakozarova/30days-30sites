@@ -10,9 +10,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
             body {
-                font-family: 'Courgette', cursive;
                 background-color: crimson;
                 color: azure;
+                font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+                text-align: center;
             }
             h1 {
                 text-align: center;
@@ -28,9 +29,15 @@
                 padding-top: 10%;
                 padding-bottom: 5%;
             }
-            body {
-                font-family: 'PT Sans', Helvetica, Arial, sans-serif;
-                text-align: center;
+            .navbar {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border: 0;
+                border-radius: 0;
+                margin-bottom: 0;
+                font-size: 12px;
+                letter-spacing: 5px;
+                position: fixed;
             }
             .page-container {
                 overflow: hidden;
@@ -121,7 +128,7 @@
                 box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .2) inset;
             }
             /* Highlighted table */
-            
+
             .pricing-table-highlighted {
                 margin-top: 0;
             }
@@ -147,71 +154,93 @@
     </head>
 
     <body>
-        <!-- Winx logo pic -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 bg-green">
-                    <img class="img-responsive center-block" src="Winx_Club_Logo.png" alt="winx club logo" />
-                    <br>
-                    <br>
-                </div>
+    <!-- Menu -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> </button>
+                <a class="navbar-brand" href="https://www.plovediv.bg">WINX CLUB</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#winx">START</a>
+                    </li>
+                    <li><a href="#map">MAP</a>
+                    </li>
+                    <li> <a href="#pricing"> PRICING </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <p style="padding-bottom: 5%">
-            Winx club. Every girl's dream turned into reality. Tea party? We're in. Dress up games? Totally! Out club will give you everything you ever wanted, we're basically every girl's dream come true. Make sure you visit us and we won't let you down - you'll have the best day of your life.
-        </p>
-        <!-- Embed map to club location -->
-        <hr>
-        <h1 style="padding-bottom: 5%;padding-top: 5%"> Where are we located?</h1>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.992694422026!2d23.320053415705345!3d42.682697079166516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8508b2ee829d%3A0x87534f09b19439b7!2z0LPRgNCw0LTQuNC90LAgItCR0LDQvdGPINCb0L7Qt9C10L3QtdGGIiwgMTQyMSBnLmsuIExvemVuZXRzLCBTb2ZpYQ!5e0!3m2!1sen!2sbg!4v1502005234029" width="100%" height="60%" allowfullscreen> </iframe>
-        <br>
+    </nav>
 
-        <!-- Pricing -->
-        <h1 style="padding-top: 5%"> Pricing</h1>
-        <div class="page-container">
-
-            <div class="pricing-table">
-                <div class="pricing-table-header">
-                    <h2> One hour visit</h2>
-                    <h3>$15</h3>
-                </div>
-                <div class="pricing-table-space"></div>
-
-                <div class="pricing-table-sign-up">
-                    <p><a href="#">RSVP</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="pricing-table pricing-table-highlighted">
-                <div class="pricing-table-header">
-                    <h2>One day visit</h2>
-                    <h3>$59</h3>
-                </div>
-                <div class="pricing-table-space"></div>
-
-
-                <div class="pricing-table-sign-up">
-                    <p><a href="#">RSVP</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="pricing-table">
-                <div class="pricing-table-header">
-                    <h2>One month <br>unlimited visits</h2>
-                    <h3>$685</h3>
-                </div>
-                <div class="pricing-table-space"></div>
-
-                <div class="pricing-table-sign-up">
-                    <p><a href="#">RSVP</a>
-                    </p>
-                </div>
+    <!-- Winx logo pic -->
+    <div class="container-fluid" id="winx">
+        <div class="row">
+            <div class="col-sm-12 bg-green">
+                <img class="img-responsive center-block" src="Winx_Club_Logo.png" alt="winx club logo" />
+                <br>
+                <br>
             </div>
         </div>
-            <br> <br> <br> <br> <br> <br> <br> <br>
+    </div>
+    <p style="padding-bottom: 5%">
+        Winx club. Every girl's dream turned into reality. Tea party? We're in. Dress up games? Totally! Out club will give you everything you ever wanted, we're basically every girl's dream come true. Make sure you visit us and we won't let you down - you'll have the best day of your life.
+    </p>
+
+    <!-- Embed map to club location -->
+    <hr id="map">
+    <h1 style="padding-bottom: 5%;padding-top: 5%"> Where are we located?</h1>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.992694422026!2d23.320053415705345!3d42.682697079166516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8508b2ee829d%3A0x87534f09b19439b7!2z0LPRgNCw0LTQuNC90LAgItCR0LDQvdGPINCb0L7Qt9C10L3QtdGGIiwgMTQyMSBnLmsuIExvemVuZXRzLCBTb2ZpYQ!5e0!3m2!1sen!2sbg!4v1502005234029" width="100%" height="60%" allowfullscreen> </iframe>
+    <br>
+
+    <!-- Pricing -->
+    <h1 style="padding-top: 5%" id="pricing"> Pricing</h1>
+    <div class="page-container">
+
+        <div class="pricing-table">
+            <div class="pricing-table-header">
+                <h2> One hour visit</h2>
+                <h3>$15</h3>
+            </div>
+            <div class="pricing-table-space"></div>
+
+            <div class="pricing-table-sign-up">
+                <p><a href="#">RSVP</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="pricing-table pricing-table-highlighted">
+            <div class="pricing-table-header">
+                <h2>One day visit</h2>
+                <h3>$59</h3>
+            </div>
+            <div class="pricing-table-space"></div>
+
+
+            <div class="pricing-table-sign-up">
+                <p><a href="#">RSVP</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="pricing-table">
+            <div class="pricing-table-header">
+                <h2>One month <br>unlimited visits</h2>
+                <h3>$685</h3>
+            </div>
+            <div class="pricing-table-space"></div>
+
+            <div class="pricing-table-sign-up">
+                <p><a href="#">RSVP</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br> <br> <br> <br>
+
     </body>
 
     </html>
