@@ -28,36 +28,7 @@
                 text-align: center;
             }
 
-            @-webkit-keyframes fadeInDown {
-                0% {
-                    opacity: 0;
-                    -webkit-transform: translateY(-20px);
-                    transform: translateY(-20px);
-                }
-
-                100% {
-                    opacity: 1;
-                    -webkit-transform: translateY(0);
-                    transform: translateY(0);
-                }
-            }
-
-            @keyframes fadeInDown {
-                0% {
-                    opacity: 0;
-                    -webkit-transform: translateY(-20px);
-                    -ms-transform: translateY(-20px);
-                    transform: translateY(-20px);
-                }
-
-                100% {
-                    opacity: 1;
-                    -webkit-transform: translateY(0);
-                    -ms-transform: translateY(0);
-                    transform: translateY(0);
-                }
-            }
-
+           
             .fadeInDown {
                 -webkit-animation-name: fadeInDown;
                 animation-name: fadeInDown;
@@ -66,22 +37,7 @@
                 display: block;
             }
 
-            @media print {
-                * {
-                    text-shadow: none !important;
-                    color: white !important;
-                    background: transparent !important;
-                    box-shadow: none !important;
-                }
-                img {
-                    page-break-inside: avoid;
-                }
-                img {
-                    max-width: 100% !important;
-                }
-                @page  {
-                    margin: 2cm .5cm;
-                }
+
                 p,
                 h2,
                 h3 {
@@ -161,35 +117,6 @@
                 clear: both;
             }
 
-            /* ==========================================================================
-               Media Queries
-               ========================================================================== */
-
-
-
-            @media only screen and (min-width: 768px) and (max-width: 991px) {
-                /****Ipad Portrait 768 Container 750 ****/
-                body{ font-size:13px;}
-                p{ line-height:20px ;}
-                h2{ font-size:30px}
-                h6{ font-size:16px;}
-                h3{ font-size:15px;}
-                .main-section{ padding:70px 0;}
-
-            }
-
-            @media only screen and (max-width: 767px) {
-                /****Mobile Landscape 480 Container 100% ****/
-                body{ font-size:12px;}
-                h2{ font-size:26px;}
-                h3{ font-size:14px;}
-                h6{ font-size:16px; margin-bottom:40px;}
-                p{ line-height:18px;}
-                .main-section{ padding:60px 0 70px;}
-                .team-leader-box{ max-width:307px; width:auto; float:none; margin:0 auto;	}
-                .team-leader-box:nth-of-type(3n){ margin:0 auto}
-                .main-section.team{ padding:60px 0 50px;}
-            }
 
 
             .clearfix:before,
@@ -292,10 +219,10 @@
 
     <body>
     <div>
-    <h1>
-        <img src="Mug-with-Beer-PNG-Vector-Clipart-Image.png" style="float:right;margin:0 5px 0 0;height: 60%;padding-left: 2%"/>
-        Welcome to King's Beer
-    </h1>
+        <h1>
+            <img src="Mug-with-Beer-PNG-Vector-Clipart-Image.png" style="float:right;margin:0 5px 0 0;height: 60%;padding-left: 2%"/>
+            Welcome to King's Beer
+        </h1>
     </div>
     <hr>
     <p>
@@ -342,7 +269,7 @@
             </div>
         </div>
     </section>
-<p> Not sure if you would enjoy our beers? Come join us for a free beer! <br> <br></p>
+    <p> Not sure if you would enjoy our beers? Come join us for a free beer! <br> <br></p>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80946.25654552462!2d-3.5154486969416645!3d50.65366698784586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da69c5dd38015%3A0xeec5401d373d8821!2sDial+A+Drink!5e0!3m2!1sbg!2sbg!4v1502015953092" width="100%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
     <img src="foor.png" height="100%" style="padding-top: 5%;max-width: 100%;height:auto">
