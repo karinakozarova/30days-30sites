@@ -1607,8 +1607,20 @@
     <div id="pagegradient"></div>
 
     <a class="button">
-        <span>press here to buy candy</span>
+        <div class="bootstrap-tagsinput"id="1">
+        <span class="tag label label-info"> press here to buy candy</span>
     </a>
-    
+    <script>
+        $(document).ready(function(){
+
+
+            $(".tag").click(function(){
+
+
+                alert("You successfully bought candies!");
+            });
+
+        });
+    </script>
     </body>
 </html>
