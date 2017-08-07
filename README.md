@@ -20,4 +20,5 @@ To be done:
 <a href = "http://karinakozarova.me/30days-30sites/16/day16.html"> Charitable organization (day sixteen) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/17/day17.html"> Fashion/Clothing site (day seventeen) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/18/day18.html"> Cruise ship(day eighteen) </a>  <br>
+<a href = "http://karinakozarova.me/30days-30sites/19/day19.html"> Candy(day nineteen) </a>  <br>
 
