@@ -1,120 +1,297 @@
 <!DOCTYPE html>
+
 <html>
-<title> RSVP</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
+<head>
+    <title>RSVP</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel=
+    "stylesheet">
+    <style>
     body,h1{font-family: "Raleway", sans-serif;
         background-color: rgba(255, 215, 0, 0.49)
     }
-    body, html {height: 100%}
-    p {line-height: 2}
-    html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-    html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
-    button,input{font:inherit;margin:0}
-    button,input{overflow:visible}button{text-transform:none}
-    button,html [type=button]{-webkit-appearance:button}
-    button::-moz-focus-inner, [type=button]::-moz-focus-inner{border-style:none;padding:0}
-    button:-moz-focusring, [type=button]:-moz-focusring{outline:1px dotted ButtonText}
-    ::-webkit-input-placeholder{color:inherit;opacity:0.54}
-    ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
-    /* End extract */
-    html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-    h1{font-size:36px}
-    h1{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
-    .w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
-    .w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
-    .w3-button:disabled{cursor:not-allowed;opacity:0.3}:disabled *{pointer-events:none}
-    .w3-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
-    .w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
-    .w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}.w3-block{display:block;width:100%}
-    .w3-container:after,.w3-container:before,.w3-row:after,.w3-row:before{content:"";display:table;clear:both}
-    @media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}}
-    @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
-    @media (min-width:993px){.w3-modal-content{width:900px}}.w3-round{border-radius:4px}
-    .w3-container{padding:0.01em 16px}
-    .w3-card-4{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
-    .w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
-    .w3-opacity{opacity:0.60}.w3-hover-opacity-off:hover{opacity:1}.w3-large{font-size:18px!important}
-    .w3-xlarge{font-size:24px!important}.w3-center{text-align:center!important}.w3-border{border:1px solid #ccc!important}
-    .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
-    .w3-button:hover{color:#000!important;background-color:#ccc!important}
-    /* Colors */
-    .w3-green{color:#fff!important;background-color:#4CAF50!important}
-    .w3-red{color:#fff!important;background-color: #f43231 !important}
-    .w3-white{color:#000!important;background-color:#fff!important}
-    #rsvp {
-    }
+   body, h1 {
+    font-family: "Raleway", sans-serif;
+    background-color: rgba(255, 215, 0, 0.49)
+}
+body, html {
+    height: 100%
+}
+p {
+    line-height: 2
+}
+html {
+    box-sizing: border-box
+}
+*, *:before, *:after {
+    box-sizing: inherit
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+    margin: 0
+}
+button, input {
+    font: inherit;
+    margin: 0
+}
+button, input {
+    overflow: visible
+}
+button {
+    text-transform: none
+}
+button, html [type=button] {
+    -webkit-appearance: button
+}
+button::-moz-focus-inner, [type=button]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+button:-moz-focusring, [type=button]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+ ::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54
+}
+ ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
 
-    #id01 {
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+html {
+    overflow-x: hidden
+}
+h1 {
+    font-size: 36px
+}
+h1 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+.w3-wide {
+    letter-spacing: 4px
+}
+.w3-button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+.w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.w3-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+:disabled * {
+    pointer-events: none
+}
+.w3-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+.w3-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+.w3-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+.w3-block {
+    display: block;
+    width: 100%
+}
+.w3-container:after, .w3-container:before, .w3-row:after, .w3-row:before {
+    content: "";
+    display: table;
+    clear: both
+}
+@media (max-width:600px) {
+    .w3-modal-content {
+        margin: 0 10px;
+        width: auto!important
     }
+    .w3-modal {
+        padding-top: 30px
+    }
+}
+@media (max-width:768px) {
+    .w3-modal-content {
+        width: 500px
+    }
+    .w3-modal {
+        padding-top: 50px
+    }
+}
+@media (min-width:993px) {
+    .w3-modal-content {
+        width: 900px
+    }
+}
+.w3-round {
+    border-radius: 4px
+}
+.w3-container {
+    padding: 0.01em 16px
+}
+.w3-card-4 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.w3-animate-zoom {
+    animation: animatezoom 0.6s
+}
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+.w3-opacity {
+    opacity: 0.60
+}
+.w3-hover-opacity-off:hover {
+    opacity: 1
+}
+.w3-large {
+    font-size: 18px!important
+}
+.w3-xlarge {
+    font-size: 24px!important
+}
+.w3-center {
+    text-align: center!important
+}
+.w3-border {
+    border: 1px solid #ccc!important
+}
+.w3-padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+.w3-button:hover {
+    color: #000!important;
+    background-color: #ccc!important
+}
 
-    .w3-large {
-        font-size: 300% !important
-    }
+.w3-green {
+    color: #fff!important;
+    background-color: #4CAF50!important
+}
+.w3-red {
+    color: #fff!important;
+    background-color: #f43231 !important
+}
+.w3-white {
+    color: #000!important;
+    background-color: #fff!important
+}
 
-    .w3-xlarge {
-    }
+.w3-large {
+    font-size: 300% !important
+}
+.w3-button.w3-round.w3-red.w3-opacity.w3-hover-opacity-off {
+    padding: 8px 60px
+}
+.w3-modal-content.w3-card-4.w3-animate-zoom {
+    padding: 32px;
+    max-width: 600px
+}
+.w3-container.w3-white.w3-center {}
+.w3-input.w3-border {
+    margin-top: 4%
+}
+.w3-button.w3-block.w3-green {}
+    </style>
+</head>
 
-    .w3-button.w3-round.w3-red.w3-opacity.w3-hover-opacity-off {
-        padding: 8px 60px
-    }
-
-    .w3-modal-content.w3-card-4.w3-animate-zoom {
-        padding: 32px;
-        max-width: 600px
-    }
-
-    .w3-container.w3-white.w3-center {
-    }
-
-    .w3-wide {
-    }
-
-    .w3-input.w3-border {
-        margin-top: 4%
-    }
-
-    .w3-row {
-    }
-
-    .w3-button.w3-block.w3-green {
-    }
-</style>
 <body>
+    <!-- RSVP section -->
 
-<!-- RSVP section -->
-<div class="w3-container w3-padding-64  w3-center w3-wide" id="rsvp">
-    <p class="w3-large">HOPE YOU CAN MAKE IT!</p>
-    <p class="w3-xlarge">
-        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
-    </p>
-</div>
 
-<!-- RSVP modal -->
-<div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-        <div class="w3-container w3-white w3-center">
-            <h1 class="w3-wide">RSVP</h1>
-            <form>
-                <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
-                <input class="w3-input w3-border" type="text" placeholder="Ship(s)" name="ship" >
-                <input class="w3-input w3-border" type="text" placeholder="Date(s)" name="date">
-                <input class="w3-input w3-border" type="text" placeholder="Email" name="email" >
+    <div class="w3-container w3-padding-64 w3-center w3-wide" id="rsvp">
+        <p class="w3-large">HOPE YOU CAN MAKE IT!</p>
+        <p class="w3-xlarge"><button class=
+        "w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" onclick=
+        "document.getElementById('id01').style.display='block'" style=
+        "padding:8px 60px">RSVP</button>
+        </p>
+    </div>
+    <!-- RSVP modal -->
 
-            </form>
-            <p><i>Sincerely, St. Vlas Crew</i></p>
-            <div class="w3-row">
-                <div >
-                    <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green"> Contact us</button>
+
+    <div class="w3-modal" id="id01">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+            <div class="w3-container w3-white w3-center">
+                <h1 class="w3-wide">RSVP</h1>
+
+
+                <form>
+                    <input class="w3-input w3-border" name="name" placeholder=
+                    "Name(s)" type="text"> <input class="w3-input w3-border"
+                    name="ship" placeholder="Ship(s)" type="text">
+                    <input class="w3-input w3-border" name="date" placeholder=
+                    "Date(s)" type="text"> <input class="w3-input w3-border"
+                    name="email" placeholder="Email" type="text">
+                </form>
+
+
+                <p><i>Sincerely, St. Vlas Crew</i>
+                </p>
+
+
+                <div class="w3-row">
+                    <div>
+                        <button class="w3-button w3-block w3-green" onclick=
+                        "document.getElementById('id01').style.display='none'"
+                        type="button">Contact us</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
 </body>
 </html>
-
