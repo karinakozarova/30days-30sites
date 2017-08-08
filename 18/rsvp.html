@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
-<title>Reserve</title>
+<title> RSVP</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-    body,h1,h2{font-family: "Raleway", sans-serif;
+    body,h1{font-family: "Raleway", sans-serif;
         background-color: rgba(255, 215, 0, 0.49)
     }
     body, html {height: 100%}
     p {line-height: 2}
-    /* W3.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
     html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-    /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
     html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
     button,input{font:inherit;margin:0}
     button,input{overflow:visible}button{text-transform:none}
@@ -32,8 +30,6 @@
     .w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
     .w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}.w3-block{display:block;width:100%}
     .w3-container:after,.w3-container:before,.w3-row:after,.w3-row:before{content:"";display:table;clear:both}
-    .w3-half{float:left;width:100%}
-    @media (min-width:601px){.w3-half{width:49.99999%}}
     @media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}}
     @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
     @media (min-width:993px){.w3-modal-content{width:900px}}.w3-round{border-radius:4px}
@@ -46,8 +42,9 @@
     .w3-button:hover{color:#000!important;background-color:#ccc!important}
     /* Colors */
     .w3-green{color:#fff!important;background-color:#4CAF50!important}
-    .w3-red{color:#fff!important;background-color:#f44336!important}
+    .w3-red{color:#fff!important;background-color: #f43231 !important}
     .w3-white{color:#000!important;background-color:#fff!important}
+    
 </style>
 <body>
 
@@ -68,13 +65,14 @@
                 <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name" style="margin-top: 4%">
                 <input class="w3-input w3-border" type="text" placeholder="Ship(s)" name="ship" style="margin-top: 4%">
                 <input class="w3-input w3-border" type="text" placeholder="Date(s)" name="date" style="margin-top: 4%">
+                <input class="w3-input w3-border" type="text" placeholder="Email" name="email" style="margin-top: 4%">
+
             </form>
             <p><i>Sincerely, St. Vlas Crew</i></p>
             <div class="w3-row">
                 <div >
                     <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green"> Contact us</button>
                 </div>
-
             </div>
         </div>
     </div>
