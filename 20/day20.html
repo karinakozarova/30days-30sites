@@ -12,11 +12,120 @@
         <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
         <style>
+
+
+            /* Links */
+            a,
+            a:focus,
+            a:hover {
+                color: #fff;
+                font-size: 200%;
+            }
+
+            /* Custom default button */
+            .btn-secondary,
+            .btn-secondary:hover,
+            .btn-secondary:focus {
+                color: #333;
+                text-shadow: none; /* Prevent inheritance from `body` */
+                background-color: #fff;
+                border: .05rem solid #fff;
+            }
+
+            html,
+            body {
+                height: 100%;
+                background-color: #333;
+            }
+            body {
+                color: #fff;
+                text-align: center;
+                text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+            }
+
+            /* Extra markup and styles for table-esque vertical and horizontal centering */
+            .site-wrapper {
+                display: table;
+                width: 100%;
+                height: 100%; /* For at least Firefox */
+                min-height: 100%;
+                -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+                box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+            }
+            .site-wrapper-inner {
+                display: table-cell;
+                vertical-align: top;
+            }
+            .cover-container {
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            /* Padding for spacing */
+            .inner {
+                padding: 2rem;
+            }
+
+
+            /*
+             * Header
+             */
+
+
+            /*
+             * Cover
+             */
+
+            .cover {
+                padding: 0 1.5rem;
+            }
+            .cover .btn-lg {
+                padding: .75rem 1.25rem;
+                font-weight: bold;
+            }
+
+
+            /*
+             * Footer
+             */
+
+            .mastfoot {
+                color: rgba(255,255,255,.5);
+            }
+
+
+            /*
+             * Affix and center
+             */
+
+            @media (min-width: 40em) {
+                /* Pull out the header and footer */
+                .mastfoot {
+                    position: fixed;
+                    bottom: 0;
+                }
+                /* Start the vertical centering */
+                .site-wrapper-inner {
+                    vertical-align: middle;
+                }
+                /* Handle the widths */
+                .mastfoot,
+                .cover-container {
+                    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+                }
+            }
+
+            @media (min-width: 62em) {
+                .mastfoot,
+                .cover-container {
+                    width: 42rem;
+                }
+            }
             body{
                 background-color: #1a1a1a;
                 font-family: 'Slabo', serif;
             }
-            h1,h2,h3,h4,h5,h6,p{
+            h1,p{
                 color: snow;
                 text-align: center;
             }
@@ -45,10 +154,49 @@
                     font-size: 28px;
                 }
             }
+
         </style>
     </head>
 <body>
-<h1 class="display-4"> Landing page</h1>
+<div class="site-wrapper">
 
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="inner cover">
+                <h1 class="cover-heading">Welcome to my blog!</h1>
+                <p class="lead"> Lores gypsum dolor sit meat, re quid recuse,
+                    in decor asseverate disciplining viz. In corpora cementum
+                    cum, man lull dissent in. Er nostrum voluptuary is. Dividend
+                    cu eons, qua sues principles per re. Merriam perpetual
+                    occurrence est at, per vitae.
+                </p>
+                <p class="lead">
+                    <a href="http://karinakozarova.me/Blog/home.html" class="btn btn-lg btn-secondary" style="font-size: 100%">To the blog</a>
+                </p>
+            </div>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Proudly powered by <a href="https://getbootstrap.com">Bootstrap</a>.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
