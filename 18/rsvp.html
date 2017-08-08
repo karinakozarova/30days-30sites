@@ -44,13 +44,49 @@
     .w3-green{color:#fff!important;background-color:#4CAF50!important}
     .w3-red{color:#fff!important;background-color: #f43231 !important}
     .w3-white{color:#000!important;background-color:#fff!important}
-    
+    #rsvp {
+    }
+
+    #id01 {
+    }
+
+    .w3-large {
+        font-size: 300% !important
+    }
+
+    .w3-xlarge {
+    }
+
+    .w3-button.w3-round.w3-red.w3-opacity.w3-hover-opacity-off {
+        padding: 8px 60px
+    }
+
+    .w3-modal-content.w3-card-4.w3-animate-zoom {
+        padding: 32px;
+        max-width: 600px
+    }
+
+    .w3-container.w3-white.w3-center {
+    }
+
+    .w3-wide {
+    }
+
+    .w3-input.w3-border {
+        margin-top: 4%
+    }
+
+    .w3-row {
+    }
+
+    .w3-button.w3-block.w3-green {
+    }
 </style>
 <body>
 
 <!-- RSVP section -->
 <div class="w3-container w3-padding-64  w3-center w3-wide" id="rsvp">
-    <p class="w3-large" style="font-size: 300% !important">HOPE YOU CAN MAKE IT!</p>
+    <p class="w3-large">HOPE YOU CAN MAKE IT!</p>
     <p class="w3-xlarge">
         <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
     </p>
@@ -58,14 +94,14 @@
 
 <!-- RSVP modal -->
 <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom">
         <div class="w3-container w3-white w3-center">
             <h1 class="w3-wide">RSVP</h1>
             <form>
-                <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name" style="margin-top: 4%">
-                <input class="w3-input w3-border" type="text" placeholder="Ship(s)" name="ship" style="margin-top: 4%">
-                <input class="w3-input w3-border" type="text" placeholder="Date(s)" name="date" style="margin-top: 4%">
-                <input class="w3-input w3-border" type="text" placeholder="Email" name="email" style="margin-top: 4%">
+                <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+                <input class="w3-input w3-border" type="text" placeholder="Ship(s)" name="ship" >
+                <input class="w3-input w3-border" type="text" placeholder="Date(s)" name="date">
+                <input class="w3-input w3-border" type="text" placeholder="Email" name="email" >
 
             </form>
             <p><i>Sincerely, St. Vlas Crew</i></p>
