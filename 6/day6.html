@@ -8,13 +8,25 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="book.css">
+		
+		<style>
+		.review{
+			text-align: center;
+			padding-right: 5% !important;
+		}
+		@media only screen and (min-width: 768px) {
+		/* For desktop: */
+			.review{
+			margin-left: 25%!important;}
+			}
+		</style>
     </head>
 
     <body>
     <h1 style="padding-top: 3%"> A man called Ove</h1>
     <div class="section1">
         <img src="ove.jpg" style="height:90%;float: left" /> <br>
-        <p style="margin-left: 25%!important;text-align: center;padding-right: 5% !important">
+        <p id="review">
             A Man Called Ove is a 2012 novel by Fredrik Backman, a Swedish columnist,
             blogger and writer. It was published in English in 2013.
             In January 2015 a stage version of the book, with Johan Rheborg in the leading
