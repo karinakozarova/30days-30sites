@@ -22,13 +22,17 @@
                 font-size: 510%;
             }
             p {
-                font-size: 200%;
+                font-size: 18px; 
                 padding-left: 10%;
                 padding-right: 10%;
                 text-align: center;
             }
-
-           
+			@media only screen and (min-width: 768px) {
+			/* For desktop: */
+			p{
+				font-size: 200%;
+			}
+		   }
             .fadeInDown {
                 -webkit-animation-name: fadeInDown;
                 animation-name: fadeInDown;
