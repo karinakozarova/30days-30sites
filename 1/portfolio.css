@@ -27,12 +27,19 @@ h2 {
     border-radius: 50%;
     align-content: center;
     margin: auto;
-    width: 30%;
+    width: 90%;
     height: auto;
     border: 3px solid green;
     padding: 10px;
 }
 
+@media only screen and (min-width: 768px) {
+ 	/* For desktop: */
+    .img-circle{
+		width: 40%;
+	}
+
+}
 .section-1{
     text-align: center;
     align-content: center;
