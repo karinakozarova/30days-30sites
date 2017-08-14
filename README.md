@@ -20,15 +20,16 @@
 <a href = "http://karinakozarova.me/30days-30sites/18/day18.html"> Cruise ship(day eighteen) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/19/day19.html"> Candy(day nineteen) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/20/day20.html"> Blog landing page (day twenty) </a>  <br>
+<a href = "http://karinakozarova.me/30days-30sites/21/day21.html"> Email newsletter (day twenty one) </a>  <br>
 
+
+
+<a href = "http://karinakozarova.me/30days-30sites/25/day25.html"> Recipe site (day twenty five) </a>  <br>
 
 To be done:
 <a href = "http://karinakozarova.me/30days-30sites/16/day16.html"> Charitable organization (day sixteen) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/17/day17.html"> Fashion/Clothing site (day seventeen) </a> <br>
-
-<a href = "http://karinakozarova.me/30days-30sites/21/day21.html"> Email newsletter (day 21) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/22/day22.html"> Weightloss product/program (day 22) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/23/day23.html"> Gardener/Landscaper(day 23) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/24/day24.html"> Online shop(day 24) </a>  <br>
-<a href = "http://karinakozarova.me/30days-30sites/25/day25.html"> Recipe site (day 25) </a>  <br>
 
