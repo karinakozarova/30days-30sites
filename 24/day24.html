@@ -85,7 +85,15 @@
             font-size: 12px;
         }
         #first{
-            margin-left: 8%;
+            display: block;
+            margin-right: auto;
+            margin-left: 0%;
+        }
+        #wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
     @media only screen and (min-width: 768px) {
@@ -97,6 +105,12 @@
         #first{
             margin-left: 8%;
         }
+    }
+
+
+    button {
+        height: 20px;
+        width: 100px;
     }
 
 </style>
@@ -120,7 +134,7 @@
             <div class="col-md-8 col-sm-8 text-right m-text-center">
                 <h1>Ready to Change Your Shopping Life Yet?</h1>
             </div>
-            <div class="col-md-4 col-sm-4 m-text-center" style="text-align:center;">
+            <div class="col-md-4 col-sm-4 m-text-center" id="wrapper" style="text-align:center;">
                 <a class="btn btn-white" id="btn">Take the Next Step</a>
             </div>
         </div>
