@@ -1,102 +1,130 @@
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-    position: fixed;
-}
+<!DOCTYPE html>
+<html>
+<title> Online shop </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    body, html {
+        height: 100%;
+    }
 
-body {
-    line-height: 1.8;
+    p {
+        line-height: 2;
+    }
+    .circular {
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+        margin-top: 3%;
+    }
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .circular{
+            margin:2%;
+            margin-left: 6%;
+        }
+        #first{
+            margin-left: 8%;
+        }
+    }
 
-}
-h1 {
-    padding-top: 2%;
-    font-size: 500%;
-}
+    h2 {
+        font-size: 400% !important;
+        top: 20%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    h2 span {
+        padding: 3%;
+        letter-spacing: -1px;
+        color: white;
+        background: rgb(0, 0, 0);
+        /* fallback color */
+        background: rgba(23, 23, 23, .7);
+    }
+    h1{
+        text-align: center;
+    }
+    section {background:#0086d2; padding:40px 0;}
 
-h2 {
-    font-size: 200%;
-}
+    h1{
+        text-transform:uppercase;
+        font-family:Arial;
+        font-size:40px;
+    }
 
-.img-circle {
-    display: block;
-    border-radius: 50%;
-    align-content: center;
-    margin: auto;
-    width: 90%;
-    height: auto;
-    border: 3px solid green;
-    padding: 10px;
-}
+    .btn {
+        border-radius: 5px;
+        margin: 21px 0 0 0;
+        font-weight:700;
+    }
 
-@media only screen and (min-width: 768px) {
- 	/* For desktop: */
-    .img-circle{
-		width: 40%;
-	}
+    .btn.btn-white {
+        background: #fff;
+        color: #666;
+        border-bottom: 4px solid #ddd;
+        padding: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 20%;
+    }
 
-}
-.section-1{
-    text-align: center;
-    align-content: center;
-    background-color: #64c800;
-    font-family: "Bookman Old Style";
+    @media (max-width: 768px) {
+        .m-text-center {text-align:center;}
+        .call-to-action h1{font-size:20px;}
+        .circular{ display: block;
+            margin-left: auto;
+            margin-right: auto}
+    }
+    @media (max-width: 1024px) {
+        .m-text-center {text-align:center;}
+        .call-to-action h1{font-size:25px;}
+        .btn{ display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-left: 0%;
+        }
+        h2{
+            top: 10%;
+            font-size: 12px;
+        }
+        #first{
+            margin-left: 8%;
+        }
+    }
 
-}
 
-.section-2{
-    text-align: center;
-    align-content: center;
-    background-color: #7dc0ff;
-    font-family: "Bookman Old Style";
-}
+</style>
+<body>
+<div class="image">
+    <img src="store.jpg" alt="store picture" style="max-width: 100%;width:100%">
+    <h2 style="position: absolute"><span>Our shoptastic store</span></h2>
+</div>
 
-footer {
-    text-align: center;
-}
 
-p{
-    font-size: 160%;
-}
+    <img src="clothes.jpg" class="circular" id="first">
+    <img src="shoes.jpg" class="circular">
+    <img src="watches.jpg" class="circular">
+<br>
+<h1 > <br>Clothes, shoes, watches.. <br> We have them all<br></h1> <br>
+<hr>
 
-.last-p {
-    padding-bottom: 5%;
-}
-
-.more_me-list {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    font-size: 160%;
-    list-style: none;
-}
-
-.hack-img {
-    align-content: center;
-    margin-left: 10%;
-    margin-bottom: 5%;
-}
-
-.thumbs-img {
-    align-content: center;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    width: 23.5%;
-    height: auto;
-}
-
-a{
-    font-size: 200%;
-}
-
-a:visited {
-    color: green;
-}
-
-a:active {
-    color: blue;
-}
+<section class="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 text-right m-text-center">
+                <h1>Ready to Change Your Shopping Life Yet?</h1>
+            </div>
+            <div class="col-md-4 col-sm-4 m-text-center">
+                <a class="btn btn-white" id="btn">Take the Next Step</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
