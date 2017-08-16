@@ -76,6 +76,17 @@
         img,div{
             max-width: 100%;
         }
+
+        .center-div
+        {
+            position: absolute;
+            margin: auto;
+            right: 0;
+            left: 0;
+            background-color: #ccc;
+            border-radius: 3px;
+        }
+
     </style>
 </head>
 <body>
@@ -83,8 +94,8 @@
         <img src="voluntarios.jpg" id="cover" alt="charity"/>
     </div>
 
-    <div id="shop"  class="center-img">
-        <div class="content">
+    <div id="shop"   class="center-img" class="center-div" >
+        <div class="content" style="padding-right: 5%">
             <p class="h1"> Help children in need</p>
             <img src="childr.jpg"/>
             <button type="button" class="btn btn-success" id="donate" style=" position:absolute;
@@ -93,7 +104,6 @@
             width: 100%;
             height: 10%;
             max-width: auto"> Donate</button>
-
         </div>
 
 
