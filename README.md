@@ -25,9 +25,9 @@
 <a href = "http://karinakozarova.me/30days-30sites/23/day23.html"> Gardener/Landscaper(day twenty three) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/24/day24.html"> Online shop(day 24) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/25/day25.html"> Recipe site (day twenty five) </a>  <br>
+<a href = "http://karinakozarova.me/30days-30sites/26/day26.html"> Official game site(day twenty six) </a>  <br>
 
 To be done:
 <a href = "http://karinakozarova.me/30days-30sites/17/day17.html"> Fashion/Clothing site (day seventeen) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/22/day22.html"> Weightloss product/program (day 22) </a>  <br>
-<a href = "http://karinakozarova.me/30days-30sites/26/day26.html"> Official game site(day 26) </a>  <br>
 
