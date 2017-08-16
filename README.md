@@ -15,7 +15,7 @@
 <a href = "http://karinakozarova.me/30days-30sites/13/day13.html"> Beverage (day thirteen) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/14/day14.html"> Printing company (day fourteen) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/15/day15.html"> Motivational Speaker (day fifteen) </a> <br>
-
+<a href = "http://karinakozarova.me/30days-30sites/16/day16.html"> Charitable organization (day sixteen) </a>  <br>
 
 <a href = "http://karinakozarova.me/30days-30sites/18/day18.html"> Cruise ship(day eighteen) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/19/day19.html"> Candy(day nineteen) </a>  <br>
@@ -27,7 +27,6 @@
 <a href = "http://karinakozarova.me/30days-30sites/25/day25.html"> Recipe site (day twenty five) </a>  <br>
 
 To be done:
-<a href = "http://karinakozarova.me/30days-30sites/16/day16.html"> Charitable organization (day sixteen) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/17/day17.html"> Fashion/Clothing site (day seventeen) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/22/day22.html"> Weightloss product/program (day 22) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/26/day26.html"> Official game site(day 26) </a>  <br>
