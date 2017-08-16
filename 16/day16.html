@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Charity </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        #cover{
+            width: 100%;
+            max-width: 100%;
+            height:auto;
+        }
+        p{
+            text-align: center;
+        }
+
+        .image {
+            position:relative;
+        }
+        .image img {
+            width:100%;
+            vertical-align:top;
+        }
+        .image:after, .image:before {
+            position:absolute;
+            opacity:90;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+        }
+        .image:after {
+            content:'\A';
+            width:100%; height:100%;
+            top:0; left:0;
+            background:rgba(0,0,0,0.6);
+        }
+
+        .image:hover:after, .image:hover:before {
+            opacity:1;
+        }
+        
+        .center-img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="image">
+    <img src="voluntarios.jpg" id="cover" alt="charity"/>
+</div>
+    <div data-content="Here is a caption" class="image">
+        <img src="childr.jpg" alt="children in need" style="max-width: 60%; " class="center-img"/>
+    </div>
+
+</body>
+</html>
