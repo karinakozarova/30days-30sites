@@ -15,10 +15,13 @@ body {
 }
 
 p{
-    font-family: 'Bellefair', serif;
     font-size: 200%;
 }
-
+@media (min-width: 768px) {
+     p{
+          font-size: 100%;
+     }
+}
 .header{
     font-size: 400%;
     font-family: 'Bellefair', serif;
