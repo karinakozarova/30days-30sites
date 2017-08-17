@@ -58,6 +58,16 @@
     <body>
         <img src="01.%20Previously%20On%20Pretty%20Little%20Liars.png" style="max-width: 100%">
 
+
+        <audio id="audio" controls preload="auto" style="width: 100%">
+            <source src="pll.mp3" type="audio/mpeg" />
+        </audio>
+
+        <script>
+            var audio = document.getElementById('audio');
+            audio.play(); // works on desktop browsers. Silently fails in mobile Safari
+        </script>
+
         <h1 style="text-align: center;font-size: 400%"> The cast</h1>
 
         <div class="row">
@@ -86,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="column">
                 <div class="card">
                     <img src="hanna.jpg" alt="ashley benson" style="width:100%">
@@ -96,5 +106,7 @@
                 </div>
             </div>
         </div>
+
+
     </body>
 </html>
