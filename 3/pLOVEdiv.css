@@ -17,10 +17,20 @@ body {
 p{
     font-size: 100%;
 }
+
+.divs{
+     float:left;
+     width:45%;
+}
+
 @media (min-width: 768px) {
      p{
           font-size: 200%;
      }
+     
+     .divs{
+        padding-left: 5%;
+       }
 }
 .header{
     font-size: 400%;
