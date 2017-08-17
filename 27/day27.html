@@ -14,9 +14,87 @@
                 background-color: #ca0000;
                 color: white;
             }
+
+            html {
+                box-sizing: border-box;
+            }
+
+            *, *:before, *:after {
+                box-sizing: inherit;
+            }
+
+            .column {
+                float: left;
+                width: 49%;
+                margin-bottom: 16px;
+                padding: 1%;
+            }
+
+            @media (max-width: 650px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            div h2{
+                text-align: center;
+            }
         </style>
     </head>
     <body>
         <img src="01.%20Previously%20On%20Pretty%20Little%20Liars.png" style="max-width: 100%">
+
+        <h1 style="text-align: center;font-size: 400%"> The cast</h1>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="troian.png" alt="troian" style="width:100%">
+                    <div class="container">
+                        <h2>Troian Bellisario</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="SHAY.jpg" alt="shay" style="width:100%">
+                    <div class="container">
+                        <h2>Shay Mitchelle</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="aria.png" alt=lucy style="width:100%">
+                    <div class="container">
+                        <h2> Lucy Hale</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="card">
+                    <img src="hanna.jpg" alt="ashley benson" style="width:100%">
+                    <div class="container">
+                        <h2>Ashley Benson</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
