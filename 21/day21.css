@@ -1,0 +1,12 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+hr {
+    border-top: 2px solid whitesmoke;
+}
