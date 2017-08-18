@@ -3,12 +3,15 @@
          background-color: black;
          color: orangered;
      }
+
      .buy a {
          margin-bottom: 3%;
      }
+
      footer {
          bottom: 0;
      }
+
      @media (max-height: 800px) {
          footer {
              position: static;
@@ -17,6 +20,7 @@
              padding-top: 40px;
          }
      }
+
      .footer-distributed {
          background-color: #292c2f;
          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -27,6 +31,7 @@
          padding: 55px 50px;
          margin-top: 80px;
      }
+
      .footer-distributed .footer-left,
      .footer-distributed .footer-center,
      .footer-distributed .footer-right {
@@ -34,15 +39,16 @@
          vertical-align: top;
      }
      /* Footer left */
-     
+
      .footer-distributed .footer-left {
          width: 40%;
      }
+
      .footer-distributed h3 span {
          color: #5383d3;
      }
      /* Footer links */
-     
+
      .footer-distributed .footer-links a {
          display: inline-block;
          line-height: 1.8;
@@ -50,10 +56,11 @@
          color: inherit;
      }
      /* Footer Center */
-     
+
      .footer-distributed .footer-center {
          width: 35%;
      }
+
      .footer-distributed .footer-center i {
          background-color: #33383b;
          color: #ffffff;
@@ -66,26 +73,30 @@
          margin: 10px 15px;
          vertical-align: middle;
      }
+
      .footer-distributed .footer-center i.fa-envelope {
          font-size: 17px;
          line-height: 38px;
      }
+
      .footer-distributed .footer-center p {
          display: inline-block;
          color: #ffffff;
          vertical-align: middle;
          margin: 0;
      }
+
      .footer-distributed .footer-center p a {
          color: #5383d3;
          text-decoration: none;
          ;
      }
      /* Footer Right */
-     
+
      .footer-distributed .footer-right {
          width: 20%;
      }
+
      .footer-distributed .footer-company-about {
          line-height: 20px;
          color: #92999f;
@@ -93,6 +104,7 @@
          font-weight: normal;
          margin: 0;
      }
+
      .footer-distributed .footer-company-about span {
          display: block;
          color: #ffffff;
@@ -100,9 +112,11 @@
          font-weight: bold;
          margin-bottom: 20px;
      }
+
      .footer-distributed .footer-icons {
          margin-top: 25px;
      }
+
      .footer-distributed .footer-icons a {
          display: inline-block;
          width: 35px;
@@ -117,6 +131,7 @@
          margin-right: 3px;
          margin-bottom: 5px;
      }
+
      @media (max-width: 880px) {
          .footer-distributed {
              font: bold 14px sans-serif;
@@ -145,8 +160,8 @@
              font-size: 16px;
          }
      }
+
      @media only screen and (min-width: 768px) {
          /* For desktop: */
-         
          font-size: 36px;
      }
