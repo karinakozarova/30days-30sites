@@ -1,0 +1,37 @@
+.container {
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+#tony {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: black;
+}
+
+@media(min-width: 700px) {
+    #tony {
+        max-width: 100%;
+        margin: 3%;
+        padding-left: 40%;
+    }
+    h1 {
+        color: whitesmoke;
+        padding-right: 30%;
+    }
+}
+
+@media(min-width: 700px) {
+    h1 {
+        text-align: center;
+    }
+}
+
+footer {
+    font-size: 260%;
+    text-align: center;
+}
