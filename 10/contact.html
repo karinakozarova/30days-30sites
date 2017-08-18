@@ -7,90 +7,77 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="contact.css">
+<script type="text/javascript" src="contact.js"></script>
 
 <body>
-
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
         <i class="fa fa-remove"></i>
     </a>
-    <div class="w3-bar-block w3-center">
-        <a href="day10.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-        <a href="photos.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
-        <a href="shop.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
-        <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
-    </div>
-</nav>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
-    <!-- Header -->
-    <div class="w3-opacity">
-        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-        <div class="w3-clear"></div>
-        <header class="w3-center w3-margin-bottom">
-            <h1><b>Contact me!</b></h1>
-        </header>
-    </div>
-
-    <div class="inner contact">
-        <!-- Form Area -->
-        <div class="contact-form" style="padding: 7%;padding-top: 1%">
-            <!-- Form -->
-            <form id="contact-us" method="post" action="#">
-                <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
-                    <!-- Name -->
-                    <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
-                    <!-- Email -->
-                    <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
-                    <!-- Subject -->
-                    <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
-                </div><!-- End Left Inputs -->
-                <!-- Right Inputs -->
-                <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+        <div class="w3-bar-block w3-center">
+            <a href="day10.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+            <a href="photos.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+            <a href="shop.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+        </div>
+    </nav>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1500px">
+        <!-- Header -->
+        <div class="w3-opacity">
+            <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            <div class="w3-clear"></div>
+            <header class="w3-center w3-margin-bottom">
+                <h1><b>Contact me!</b></h1>
+            </header>
+        </div>
+        <div class="inner contact">
+            <!-- Form Area -->
+            <div class="contact-form" style="padding: 7%;padding-top: 1%">
+                <!-- Form -->
+                <form id="contact-us" method="post" action="#">
+                    <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                        <!-- Name -->
+                        <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                        <!-- Email -->
+                        <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                        <!-- Subject -->
+                        <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                    </div>
+                    <!-- End Left Inputs -->
+                    <!-- Right Inputs -->
+                    <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                        <!-- Message -->
+                        <textarea name="message" id="message" class="form textarea" placeholder="Message"></textarea>
+                    </div>
+                    <!-- End Right Inputs -->
+                    <div class="relative fullwidth col-xs-12">
+                        <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+                <!-- Your Mail Message -->
+                <div class="mail-message-area">
                     <!-- Message -->
-                    <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
-                </div><!-- End Right Inputs -->
-                <div class="relative fullwidth col-xs-12">
-                    <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
-                </div>
-                <div class="clear"></div>
-            </form>
-
-            <!-- Your Mail Message -->
-            <div class="mail-message-area">
-                <!-- Message -->
-                <div class="alert gray-bg mail-message not-visible-message">
-                    <strong>Thank You !</strong> Your email has been delivered.
+                    <div class="alert gray-bg mail-message not-visible-message">
+                        <strong>Thank You !</strong> Your email has been delivered.
+                    </div>
                 </div>
             </div>
-
-        </div><!-- End Contact Form Area -->
-    </div><!-- End Inner -->
-
-
-    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
-        <p> We can connect on:</p>
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </footer>
-    <script>
-        // Open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.width = "100%";
-            document.getElementById("mySidebar").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-    </script>
-
+            <!-- End Contact Form Area -->
+        </div>
+        <!-- End Inner -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
+            <p> We can connect on:</p>
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </footer>
+        <script type="text/javascript" src="contact.js"></script>
 </body>
+
 </html>
