@@ -1,5 +1,6 @@
 <DOCTYPE html>
     <html>
+
     <head>
         <title> Birthday party </title>
         <link rel="stylesheet" type="text/css" href="event_invitation.css">
@@ -9,145 +10,131 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-
-
     </head>
+
     <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#INVITATION">INVITATION</a></li>
+                        <li> <a href="#REGISTER"> REGISTER </a> </li>
+                        <li><a href="#Details">EVENT DETAILS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Photo invitation-->
+        <img src="bday.jpg" alt="Birtday invitation" class="width-fullscreen" id="INVITATION">
+        <br>
+        <p id="REGISTER"> </p>
+        <br>
+        <br>
+        <br>
+        <h1 style="font-family: 'Open Sans Condensed" class="header"> You are the choosen one! </h1>
+        <br>
+        <img src="ballons.png" alt="balloons" class="to-right">
+        <br>
+        <br>
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#INVITATION">INVITATION</a></li>
-                    <li> <a href="#REGISTER"> REGISTER </a> </li>
-                    <li><a href="#Details">EVENT DETAILS</a></li>
-                </ul>
-            </div>
+            <form class="well form-horizontal" action=" " method="post" id="contact_form">
+                <fieldset>
+                    <!-- Form Name -->
+                    <legend>Contact Us Today!</legend>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">First Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Last Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">E-Mail</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Phone #</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text area -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"> Any comments? </label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-warning" onclick="myFunction()">Send <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </div>
+                    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+                </fieldset>
+            </form>
         </div>
-    </nav>
-
-
-    <!-- Photo invitation-->
-    <img src="bday.jpg" alt = "Birtday invitation" class = "width-fullscreen" id = "INVITATION">
-    <br >
-    <p id = "REGISTER"> </p> <br> <br> <br>
-    <h1 style="font-family: 'Open Sans Condensed" class = "header" > You are the choosen one! </h1> <br>
-    <img src="ballons.png" alt = "balloons" class = "to-right">
-
-    <br> <br>
-
-    <div class="container">
-
-        <form class="well form-horizontal" action=" " method="post"  id="contact_form">
-            <fieldset>
-
-                <!-- Form Name -->
-                <legend>Contact Us Today!</legend>
-
-                <!-- Text input-->
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label">First Name</label>
-                    <div class="col-md-4 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Text input-->
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label" >Last Name</label>
-                    <div class="col-md-4 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Text input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label">E-Mail</label>
-                    <div class="col-md-4 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Text input-->
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Phone #</label>
-                    <div class="col-md-4 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Text area -->
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label"> Any comments? </label>
-                    <div class="col-md-4 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                            <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Button -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label"></label>
-                    <div class="col-md-4">
-                        <button type="submit" class="btn btn-warning" onclick="myFunction()" >Send <span class="glyphicon glyphicon-send"></span></button>
-                    </div>
-                </div>
-
-                <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
-
-            </fieldset>
-        </form>
-    </div>
-
-    <script>
-        function myFunction() {
-            document.getElementById("myForm").submit();
-        }
-    </script>
-    <!-- Event details--> <br> <br> <hr>
-    <h1 id = "Details"  style="font-family: 'Open Sans Condensed" class = "header"> <br> Event details </h1> <br>a
-
-    <div class = info>
-        <figure class="move">
-            <img src="cal.png" alt = "calendar" class="info">
-            <figcaption class="info" style="font-family: 'Open Sans Condensed" ><br> Saturday </figcaption>
-        </figure>
-        <figure class="move">
-            <img src="location.png" alt = "location" class="info">
-            <figcaption class="info" style="font-family: 'Open Sans Condensed"><br>Everywhere</figcaption>
-        </figure>
-        <figure class="move">
-            <img src="time.png" alt = "clock" class="info">
-            <figcaption class="info" style="font-family: 'Open Sans Condensed"> <br>10:00AM</figcaption>
-        </figure>
-    </div>
-    <img src="party.png" alt = "dancers" class = "dance">
+        <script src="day2.js">
+        </script>
+        <!-- Event details-->
+        <br>
+        <br>
+        <hr>
+        <h1 id="Details" style="font-family: 'Open Sans Condensed" class="header"> <br> Event details </h1>
+        <br>a
+        <div class=i nfo>
+            <figure class="move">
+                <img src="cal.png" alt="calendar" class="info">
+                <figcaption class="info" style="font-family: 'Open Sans Condensed">
+                    <br> Saturday </figcaption>
+            </figure>
+            <figure class="move">
+                <img src="location.png" alt="location" class="info">
+                <figcaption class="info" style="font-family: 'Open Sans Condensed">
+                    <br>Everywhere</figcaption>
+            </figure>
+            <figure class="move">
+                <img src="time.png" alt="clock" class="info">
+                <figcaption class="info" style="font-family: 'Open Sans Condensed">
+                    <br>10:00AM</figcaption>
+            </figure>
+        </div>
+        <img src="party.png" alt="dancers" class="dance">
     </body>
+
     </html>
