@@ -31,4 +31,5 @@
 To be done:
 <a href = "http://karinakozarova.me/30days-30sites/17/day17.html"> Fashion/Clothing site (day seventeen) </a> <br>
 <a href = "http://karinakozarova.me/30days-30sites/22/day22.html"> Weightloss product/program (day 22) </a>  <br>
+<a href = "http://karinakozarova.me/30days-30sites/28/day28.html">Digital agency(day 28) </a>  <br>
 
