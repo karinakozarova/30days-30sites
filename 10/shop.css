@@ -1,0 +1,12 @@
+body,h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+#map {
+       height: 400px;
+       width: 100%;
+}
