@@ -1,0 +1,48 @@
+ body {
+     background-color: #1a1a1a;
+ }
+
+ h1 {
+     color: white;
+     text-align: center;
+     font-size: 400%;
+ }
+
+ div {
+     background-color: #d6d6d6;
+     margin: 5%;
+     color: #1a1a1a;
+     min-height: 500px;
+ }
+
+ img {
+     padding: 2%;
+     max-width: 70%;
+ }
+
+ ul {
+     float: right;
+     font-size: 200%;
+     padding-top: 5%;
+     padding-right: 3%;
+ }
+
+ @media (min-width: 768px) {
+
+     div {
+         min-height: 800px!important;
+     }
+ }
+
+ @media (min-width: 992px) {
+
+     div {
+         min-height: 500px;
+     }
+ }
+
+ @media (min-width: 1200px) {
+     div {
+         min-height: 500px;
+     }
+ }
