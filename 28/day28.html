@@ -64,6 +64,66 @@
 
                 }
             }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .columns {
+                float: left;
+                width: 33.3%;
+                padding: 8px;
+            }
+
+            .price {
+                list-style-type: none;
+                border: 1px solid #eee;
+                margin: 0;
+                padding: 0;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+            }
+
+            .price:hover {
+                box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+            }
+
+            .price .header {
+                background-color: #111;
+                color: white;
+                font-size: 25px;
+            }
+
+            .price li {
+                border-bottom: 1px solid #eee;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .price .grey {
+                background-color: #eee;
+                color: #1a1a1a;
+            }
+
+            .button {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 10px 45px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 38px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .columns {
+                    width: 100%;
+                }
+            }
+
+            .columns{
+                font-size: 200%;
+            }
         </style>
     </head>
     <body>
@@ -107,6 +167,32 @@
 
          </div>
 
+        <h2 style="padding-bottom: 1%"> Prices?</h2>
+        <div class="columns">
+            <ul class="price">
+                <li class="header" style="background-color:#4CAF50"> Basic</li>
+                <li class="grey">$ 99.99 / year</li>
+                <li class="grey">1 Project</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+        </div>
 
+        <div class="columns">
+            <ul class="price">
+                <li class="header" style="background-color:#4CAF50">Pro</li>
+                <li class="grey">$ 249.99 / year</li>
+                <li class="grey">5 projects</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+        </div>
+
+        <div class="columns">
+            <ul class="price">
+                <li class="header" style="background-color:#4CAF50">Premium</li>
+                <li class="grey">$ 1049.99 / year</li>
+                <li class="grey"> Unlimited projects</li>
+                <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+        </div>
     </body>
 </html>
