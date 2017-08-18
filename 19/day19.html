@@ -1,1355 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Candy </title>
-        <link rel="stylesheet" type="text/css" href="pLOVEdiv.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 
-<style>
-    @charset "UTF-8";
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
-    html {
-        height: 100%;
-    }
+<head>
+    <title> Candy </title>
+    <link rel="stylesheet" type="text/css" href="pLOVEdiv.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <link href="day19.css" rel="stylesheet">
+</head>
 
-    body {
-        background: #A7A9AC;
-        background-image: -webkit-gradient(
-                linear,
-                left top,
-                right top,
-                color-stop(.34, rgba(230,237,241,.05)),
-                color-stop(.67, rgba(230,237,241,0)));
-        -webkit-background-size: 5px 5px;
-    }
-
-    #pagegradient {
-        background-image:
-                -webkit-gradient(
-                        radial,
-                        50% -50,
-                        300,
-                        50% 0,
-                        0,
-                        from(rgba(230, 237, 241, 0)),
-                        to(rgba(230, 237, 241, 0.8)));
-
-        height:100%;
-        left:0px;
-        position:absolute;
-        top:0;
-        width: 600px;
-    }
-
-    .button {
-        position: absolute;
-        top: 100px;
-        left: 200px;
-        display: inline-block;
-        margin: 0 auto;
-
-        -webkit-border-radius: 10px;
-
-        -webkit-box-shadow:
-                0px 3px rgba(128,128,128,1), /* gradient effects */
-                0px 4px rgba(118,118,118,1),
-                0px 5px rgba(108,108,108,1),
-                0px 6px rgba(98,98,98,1),
-                0px 7px rgba(88,88,88,1),
-                0px 8px rgba(78,78,78,1),
-                0px 14px 6px -1px rgba(128,128,128,1); /* shadow */
-
-        -webkit-transition: -webkit-box-shadow .1s ease-in-out;
-    }
-
-    .button span {
-        background-color: #E8E8E8;
-
-        background-image:
-            /* gloss gradient */
-                -webkit-gradient(
-                        linear,
-                        left bottom,
-                        left top,
-                        color-stop(50%,rgba(255,255,255,0)),
-                        color-stop(50%,rgba(255,255,255,0.3)),
-                        color-stop(100%,rgba(255,255,255,0.2))),
-
-                    /* dark outside gradient */
-                -webkit-gradient(
-                        linear,
-                        left top,
-                        right top,
-                        color-stop(0%,rgba(210,210,210,0.3)),
-                        color-stop(20%,rgba(210,210,210,0)),
-                        color-stop(80%,rgba(210,210,210,0)),
-                        color-stop(100%,rgba(210,210,210,0.3))),
-
-                    /* light inner gradient */
-                -webkit-gradient(
-                        linear,
-                        left top,
-                        right top,
-                        color-stop(0%,rgba(255,255,255,0)),
-                        color-stop(20%,rgba(255,255,255,0.5)),
-                        color-stop(80%,rgba(255,255,255,0.5)),
-                        color-stop(100%,rgba(255,255,255,0))),
-
-                    /* diagonal line pattern */
-                -webkit-gradient(
-                        linear,
-                        0% 100%,
-                        100% 0%,
-                        color-stop(0%,rgba(255,255,255,0)),
-                        color-stop(40%,rgba(255,255,255,0)),
-                        color-stop(40%,#D2D2D1),
-                        color-stop(60%,#D2D2D1),
-                        color-stop(60%,rgba(255,255,255,0)),
-                        color-stop(100%,rgba(255,255,255,0)));
-
-        -webkit-box-shadow:
-                0px -1px #fff, /* top highlight */
-                0px 1px 1px #FFFFFF; /* bottom edge */
-
-        -webkit-background-size: 100%, 100%, 100%, 4px 4px;
-
-        -webkit-border-radius: 10px;
-        -webkit-transition: -webkit-transform .1s ease-in-out;
-
-        display: inline-block;
-        padding: 10px 40px 10px 40px;
-
-        color: #3A474D;
-        text-transform: uppercase;
-        font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
-        font-weight: 700;
-        font-size: 32px;
-
-        text-shadow: 0px 1px #fff, 0px -1px #262F33;
-    }
-
-    .button span:hover {
-        color: #AEBF3B;
-        text-shadow: 0px -1px #97A63A;
-        cursor: pointer;
-    }
-
-    .button:active {
-        -webkit-box-shadow:
-                0px 3px rgba(128,128,128,1),
-                0px 4px rgba(118,118,118,1),
-                0px 5px rgba(108,108,108,1),
-                0px 6px rgba(98,98,98,1),
-                0px 7px rgba(88,88,88,1),
-                0px 8px rgba(78,78,78,1),
-                0px 10px 2px 0px rgba(128,128,128,.6); /* shadow */
-    }
-
-    .button:active span{
-        -webkit-transform: translate(0, 5px); /* depth of button press */
-    }
-
-    .button span:after {
-        content: ">";
-        display: block;
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        right: 14px;
-        top: 12px;
-
-        font-family: 'Cabin';
-        font-weight: 700;
-        color: #AEBF3B;
-        text-shadow: 0px 1px #fff, 0px -1px #97A63A;
-        font-size: 26px;
-    }
-
-    .image {
-        width: 250px;
-        float: left;
-        margin: 20px;
-    }
-    th,td{
-        color: white;
-    }
-    body {
-        font-size: small;
-        line-height: 1.4;
-    }
-
-    p {
-        margin: 0;
-    }
-
-    .performance-facts {
-        border: 1px solid black;
-        margin: 20px;
-        float: left;
-        width: 280px;
-        padding: 0.5rem;
-    }
-    .performance-facts table {
-        border-collapse: collapse;
-    }
-
-    .performance-facts__title {
-        font-weight: bold;
-        font-size: 2rem;
-        margin: 0 0 0.25rem 0;
-    }
-
-    .performance-facts__header {
-        border-bottom: 10px solid black;
-        padding: 0 0 0.25rem 0;
-        margin: 0 0 0.5rem 0;
-    }
-    .performance-facts__header p {
-        margin: 0;
-    }
-
-    .performance-facts__table, .performance-facts__table--small, .performance-facts__table--grid {
-        width: 100%;
-    }
-    .performance-facts__table thead tr th, .performance-facts__table--small thead tr th, .performance-facts__table--grid thead tr th, .performance-facts__table thead tr td, .performance-facts__table--small thead tr td, .performance-facts__table--grid thead tr td {
-        border: 0;
-    }
-    .performance-facts__table th, .performance-facts__table--small th, .performance-facts__table--grid th, .performance-facts__table td, .performance-facts__table--small td, .performance-facts__table--grid td {
-        font-weight: normal;
-        text-align: left;
-        padding: 0.25rem 0;
-        border-top: 1px solid black;
-        white-space: nowrap;
-    }
-    .performance-facts__table td:last-child, .performance-facts__table--small td:last-child, .performance-facts__table--grid td:last-child {
-        text-align: right;
-    }
-    .performance-facts__table .blank-cell, .performance-facts__table--small .blank-cell, .performance-facts__table--grid .blank-cell {
-        width: 1rem;
-        border-top: 0;
-    }
-    .performance-facts__table .thick-row th, .performance-facts__table--small .thick-row th, .performance-facts__table--grid .thick-row th, .performance-facts__table .thick-row td, .performance-facts__table--small .thick-row td, .performance-facts__table--grid .thick-row td {
-        border-top-width: 5px;
-    }
-
-    .small-info {
-        font-size: 0.7rem;
-    }
-
-    .performance-facts__table--small {
-        border-bottom: 1px solid #999;
-        margin: 0 0 0.5rem 0;
-    }
-    .performance-facts__table--small thead tr {
-        border-bottom: 1px solid black;
-    }
-    .performance-facts__table--small td:last-child {
-        text-align: left;
-    }
-    .performance-facts__table--small th, .performance-facts__table--small td {
-        border: 0;
-        padding: 0;
-    }
-
-    .performance-facts__table--grid {
-        margin: 0 0 0.5rem 0;
-    }
-    .performance-facts__table--grid td:last-child {
-        text-align: left;
-    }
-    .performance-facts__table--grid td:last-child::before {
-        content: "•";
-        font-weight: bold;
-        margin: 0 0.25rem 0 0;
-    }
-
-    .text-center {
-        text-align: center;
-    }
-
-    .thick-end {
-        border-bottom: 10px solid black;
-    }
-
-    .thin-end {
-        border-bottom: 1px solid black;
-    }
-
-
-    /*SIDEPAN*/
-    .sidepan img {
-        margin-left: 0px;
-        -webkit-transition: margin 1s ease;
-        -moz-transition: margin 1s ease;
-        -o-transition: margin 1s ease;
-        -ms-transition: margin 1s ease;
-        transition: margin 1s ease;
-    }
-
-    .sidepan img:hover {
-        margin-left: -200px;
-    }
-
-    body {
-        text-align: center;
-        height: 100%;
-        background-color: #2C4159;
-        font-family: 'Open Sans', sans-serif;
-    }
-    body:before {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-    }
-
-    .reflection-container {
-        position: relative;
-        display: inline-block;
-        vertical-align: middle;
-        transform-style: preserve-3d;
-        perspective: 1000px;
-    }
-
-    .reflection-container .reflection-content {
-        height: 80vh;
-        width: 180vh;
-        background: url(http://karinakozarova.me/30days-30sites/19/Candy-PNG-Transparent.png);
-        background-size: cover;
-        background-position: center;
-        transform: rotateX(0) rotateY(0);
-        pointer-events: none;
-        transition: 100ms linear transform;
-        overflow: hidden;
-    }
-    .reflection-container .reflection-content:before {
-        content: '';
-        position: absolute;
-        width: 200%;
-        height: 200%;
-        left: -50%;
-        top: -50%;
-    }
-    .reflection-container .reflection-grid-cell {
-        position: absolute;
-        z-index: 1;
-        width: 10%;
-        height: 10%;
-    }
-    .reflection-container .reflection-grid-cell-1 {
-        top: 0%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-1:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-1:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-2 {
-        top: 0%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-2:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-2:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-3 {
-        top: 0%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-3:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-3:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-4 {
-        top: 0%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-4:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-4:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-5 {
-        top: 0%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-5:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-5:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-6 {
-        top: 0%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-6:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-6:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-7 {
-        top: 0%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-7:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-7:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-8 {
-        top: 0%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-8:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-8:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-9 {
-        top: 0%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-9:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-9:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-10 {
-        top: 0%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-10:hover ~ .reflection-content {
-        transform: rotateX(20deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-10:hover ~ .reflection-content:before {
-        transform: translateY(20%);
-    }
-    .reflection-container .reflection-grid-cell-11 {
-        top: 10%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-11:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-11:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-12 {
-        top: 10%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-12:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-12:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-13 {
-        top: 10%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-13:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-13:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-14 {
-        top: 10%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-14:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-14:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-15 {
-        top: 10%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-15:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-15:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-16 {
-        top: 10%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-16:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-16:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-17 {
-        top: 10%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-17:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-17:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-18 {
-        top: 10%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-18:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-18:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-19 {
-        top: 10%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-19:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-19:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-20 {
-        top: 10%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-20:hover ~ .reflection-content {
-        transform: rotateX(15deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-20:hover ~ .reflection-content:before {
-        transform: translateY(15%);
-    }
-    .reflection-container .reflection-grid-cell-21 {
-        top: 20%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-21:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-21:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-22 {
-        top: 20%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-22:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-22:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-23 {
-        top: 20%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-23:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-23:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-24 {
-        top: 20%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-24:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-24:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-25 {
-        top: 20%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-25:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-25:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-26 {
-        top: 20%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-26:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-26:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-27 {
-        top: 20%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-27:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-27:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-28 {
-        top: 20%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-28:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-28:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-29 {
-        top: 20%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-29:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-29:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-30 {
-        top: 20%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-30:hover ~ .reflection-content {
-        transform: rotateX(10deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-30:hover ~ .reflection-content:before {
-        transform: translateY(10%);
-    }
-    .reflection-container .reflection-grid-cell-31 {
-        top: 30%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-31:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-31:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-32 {
-        top: 30%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-32:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-32:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-33 {
-        top: 30%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-33:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-33:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-34 {
-        top: 30%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-34:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-34:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-35 {
-        top: 30%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-35:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-35:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-36 {
-        top: 30%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-36:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-36:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-37 {
-        top: 30%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-37:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-37:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-38 {
-        top: 30%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-38:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-38:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-39 {
-        top: 30%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-39:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-39:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-40 {
-        top: 30%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-40:hover ~ .reflection-content {
-        transform: rotateX(5deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-40:hover ~ .reflection-content:before {
-        transform: translateY(5%);
-    }
-    .reflection-container .reflection-grid-cell-41 {
-        top: 40%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-41:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-41:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-42 {
-        top: 40%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-42:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-42:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-43 {
-        top: 40%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-43:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-43:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-44 {
-        top: 40%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-44:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-44:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-45 {
-        top: 40%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-45:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-45:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-46 {
-        top: 40%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-46:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-46:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-47 {
-        top: 40%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-47:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-47:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-48 {
-        top: 40%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-48:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-48:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-49 {
-        top: 40%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-49:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-49:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-50 {
-        top: 40%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-50:hover ~ .reflection-content {
-        transform: rotateX(0deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-50:hover ~ .reflection-content:before {
-        transform: translateY(0%);
-    }
-    .reflection-container .reflection-grid-cell-51 {
-        top: 50%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-51:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-51:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-52 {
-        top: 50%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-52:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-52:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-53 {
-        top: 50%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-53:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-53:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-54 {
-        top: 50%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-54:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-54:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-55 {
-        top: 50%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-55:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-55:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-56 {
-        top: 50%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-56:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-56:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-57 {
-        top: 50%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-57:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-57:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-58 {
-        top: 50%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-58:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-58:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-59 {
-        top: 50%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-59:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-59:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-60 {
-        top: 50%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-60:hover ~ .reflection-content {
-        transform: rotateX(-5deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-60:hover ~ .reflection-content:before {
-        transform: translateY(-5%);
-    }
-    .reflection-container .reflection-grid-cell-61 {
-        top: 60%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-61:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-61:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-62 {
-        top: 60%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-62:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-62:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-63 {
-        top: 60%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-63:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-63:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-64 {
-        top: 60%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-64:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-64:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-65 {
-        top: 60%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-65:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-65:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-66 {
-        top: 60%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-66:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-66:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-67 {
-        top: 60%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-67:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-67:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-68 {
-        top: 60%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-68:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-68:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-69 {
-        top: 60%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-69:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-69:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-70 {
-        top: 60%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-70:hover ~ .reflection-content {
-        transform: rotateX(-10deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-70:hover ~ .reflection-content:before {
-        transform: translateY(-10%);
-    }
-    .reflection-container .reflection-grid-cell-71 {
-        top: 70%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-71:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-71:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-72 {
-        top: 70%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-72:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-72:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-73 {
-        top: 70%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-73:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-73:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-74 {
-        top: 70%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-74:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-74:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-75 {
-        top: 70%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-75:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-75:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-76 {
-        top: 70%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-76:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-76:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-77 {
-        top: 70%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-77:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-77:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-78 {
-        top: 70%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-78:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-78:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-79 {
-        top: 70%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-79:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-79:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-80 {
-        top: 70%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-80:hover ~ .reflection-content {
-        transform: rotateX(-15deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-80:hover ~ .reflection-content:before {
-        transform: translateY(-15%);
-    }
-    .reflection-container .reflection-grid-cell-81 {
-        top: 80%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-81:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-81:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-82 {
-        top: 80%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-82:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-82:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-83 {
-        top: 80%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-83:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-83:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-84 {
-        top: 80%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-84:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-84:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-85 {
-        top: 80%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-85:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-85:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-86 {
-        top: 80%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-86:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-86:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-87 {
-        top: 80%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-87:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-87:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-88 {
-        top: 80%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-88:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-88:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-89 {
-        top: 80%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-89:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-89:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-90 {
-        top: 80%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-90:hover ~ .reflection-content {
-        transform: rotateX(-20deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-90:hover ~ .reflection-content:before {
-        transform: translateY(-20%);
-    }
-    .reflection-container .reflection-grid-cell-91 {
-        top: 90%;
-        left: 0%;
-    }
-    .reflection-container .reflection-grid-cell-91:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(-20deg);
-    }
-    .reflection-container .reflection-grid-cell-91:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-    .reflection-container .reflection-grid-cell-92 {
-        top: 90%;
-        left: 10%;
-    }
-    .reflection-container .reflection-grid-cell-92:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(-15deg);
-    }
-    .reflection-container .reflection-grid-cell-92:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-    .reflection-container .reflection-grid-cell-93 {
-        top: 90%;
-        left: 20%;
-    }
-    .reflection-container .reflection-grid-cell-93:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(-10deg);
-    }
-    .reflection-container .reflection-grid-cell-93:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-    .reflection-container .reflection-grid-cell-94 {
-        top: 90%;
-        left: 30%;
-    }
-    .reflection-container .reflection-grid-cell-94:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(-5deg);
-    }
-    .reflection-container .reflection-grid-cell-94:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-    .reflection-container .reflection-grid-cell-95 {
-        top: 90%;
-        left: 40%;
-    }
-    .reflection-container .reflection-grid-cell-95:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(0deg);
-    }
-    .reflection-container .reflection-grid-cell-95:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-    .reflection-container .reflection-grid-cell-96 {
-        top: 90%;
-        left: 50%;
-    }
-    .reflection-container .reflection-grid-cell-96:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(5deg);
-    }
-    .reflection-container .reflection-grid-cell-96:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-    .reflection-container .reflection-grid-cell-97 {
-        top: 90%;
-        left: 60%;
-    }
-    .reflection-container .reflection-grid-cell-97:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(10deg);
-    }
-    .reflection-container .reflection-grid-cell-97:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-    .reflection-container .reflection-grid-cell-98 {
-        top: 90%;
-        left: 70%;
-    }
-    .reflection-container .reflection-grid-cell-98:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(15deg);
-    }
-    .reflection-container .reflection-grid-cell-98:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-    .reflection-container .reflection-grid-cell-99 {
-        top: 90%;
-        left: 80%;
-    }
-    .reflection-container .reflection-grid-cell-99:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(20deg);
-    }
-    .reflection-container .reflection-grid-cell-99:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-    .reflection-container .reflection-grid-cell-100 {
-        top: 90%;
-        left: 90%;
-    }
-    .reflection-container .reflection-grid-cell-100:hover ~ .reflection-content {
-        transform: rotateX(-25deg) rotateY(25deg);
-    }
-    .reflection-container .reflection-grid-cell-100:hover ~ .reflection-content:before {
-        transform: translateY(-25%);
-    }
-
-    h1,h2,h3,h4,h5,h6,p{
-        color: white;
-    }
-
-</style>
-    </head>
-    <body>
+<body>
     <div class='reflection-container'>
         <a class='reflection-grid-cell reflection-grid-cell-1' href='#'></a>
         <a class='reflection-grid-cell reflection-grid-cell-2' href='#'></a>
@@ -1454,7 +120,6 @@
         <div class='reflection-content'></div>
     </div>
     <h1> The best candy in the world - LemonCandy!</h1>
-
     <div class="sidepan pic" style="padding-top: 10%">
         <img src="Etrog-Drop-Candy-Cookie-Cooking-Candy.jpg" alt="kick" style="float: left;padding-left: 10%">
         <h1 style="font-size: 500%"> How is our candy made? </h1>
@@ -1467,161 +132,143 @@
             sed, his ut hinc illum, eum vide inciderint in. Has verear salutatus
             ut, vis soleat iisque te.</h2>
     </div>
-
     <div class="sidepan pic">
-
-<div style="padding-top: 6%"> </div>
-    <h1 style="float: left;    word-wrap: break-word;padding:3%;padding-top:10%">  We are extremely happy with our product
+        <div style="padding-top: 6%"> </div>
+        <h1 style="float: left;    word-wrap: break-word;padding:3%;padding-top:10%">  We are extremely happy with our product
         - here you can see our nutrition values. In production, we make sure
     our ingredients are with the best possible quality from bio farmers.
         Lorem ipsum dolor sit amet, ex nec simul dignissim.
         Vide quaestio cotidieque sed ei, eos diam malorum ocurreret ut.
         Lorem ipsum dolor sit amet, ex nec simul dignissim.
         Vide quaestio cotidieque sed ei, eos diam malorum ocurreret ut.</h1>
-		
-    <section class="performance-facts" style="float: right;background-color: dodgerblue;margin-right: 40%">
-        <header class="performance-facts__header">
-            <h1 class="performance-facts__title">Nutrition Facts</h1>
-            <p>Serving Size 1/2 cup (about 82g)
-            <p>Serving Per Container 8</p>
-        </header>
-        <table class="performance-facts__table">
-            <thead>
-            <tr>
-                <th colspan="3" class="small-info">
-                    Amount Per Serving
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th colspan="2">
-                    <b>Calories</b>
-                    200
-                </th>
-                <td>
-                    Calories from Fat
-                    130
-                </td>
-            </tr>
-            <tr class="thick-row">
-                <td colspan="3" class="small-info">
-                    <b>% Daily Value*</b>
-                </td>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    <b>Total Fat</b>
-                    14g
-                </th>
-                <td>
-                    <b>22%</b>
-                </td>
-            </tr>
-            <tr>
-                <td class="blank-cell">
-                </td>
-                <th>
-                    Saturated Fat
-                    9g
-                </th>
-                <td>
-                    <b>22%</b>
-                </td>
-            </tr>
-            <tr>
-                <td class="blank-cell">
-                </td>
-                <th>
-                    Trans Fat
-                    0g
-                </th>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    <b>Cholesterol</b>
-                    55mg
-                </th>
-                <td>
-                    <b>18%</b>
-                </td>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    <b>Sodium</b>
-                    40mg
-                </th>
-                <td>
-                    <b>2%</b>
-                </td>
-            </tr>
-            <tr>
-                <th colspan="2">
-                    <b>Total Carbohydrate</b>
-                    17g
-                </th>
-                <td>
-                    <b>6%</b>
-                </td>
-            </tr>
-            <tr>
-                <td class="blank-cell">
-                </td>
-                <th>
-                    Dietary Fiber
-                    1g
-                </th>
-                <td>
-                    <b>4%</b>
-                </td>
-            </tr>
-            <tr>
-                <td class="blank-cell">
-                </td>
-                <th>
-                    Sugars
-                    14g
-                </th>
-                <td>
-                </td>
-            </tr>
-            <tr class="thick-end">
-                <th colspan="2">
-                    <b>Protein</b>
-                    3g
-                </th>
-                <td>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-    </section>
+        <section class="performance-facts" style="float: right;background-color: dodgerblue;margin-right: 40%">
+            <header class="performance-facts__header">
+                <h1 class="performance-facts__title">Nutrition Facts</h1>
+                <p>Serving Size 1/2 cup (about 82g)
+                    <p>Serving Per Container 8</p>
+            </header>
+            <table class="performance-facts__table">
+                <thead>
+                    <tr>
+                        <th colspan="3" class="small-info">
+                            Amount Per Serving
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th colspan="2">
+                            <b>Calories</b> 200
+                        </th>
+                        <td>
+                            Calories from Fat 130
+                        </td>
+                    </tr>
+                    <tr class="thick-row">
+                        <td colspan="3" class="small-info">
+                            <b>% Daily Value*</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <b>Total Fat</b> 14g
+                        </th>
+                        <td>
+                            <b>22%</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="blank-cell">
+                        </td>
+                        <th>
+                            Saturated Fat 9g
+                        </th>
+                        <td>
+                            <b>22%</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="blank-cell">
+                        </td>
+                        <th>
+                            Trans Fat 0g
+                        </th>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <b>Cholesterol</b> 55mg
+                        </th>
+                        <td>
+                            <b>18%</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <b>Sodium</b> 40mg
+                        </th>
+                        <td>
+                            <b>2%</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <b>Total Carbohydrate</b> 17g
+                        </th>
+                        <td>
+                            <b>6%</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="blank-cell">
+                        </td>
+                        <th>
+                            Dietary Fiber 1g
+                        </th>
+                        <td>
+                            <b>4%</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="blank-cell">
+                        </td>
+                        <th>
+                            Sugars 14g
+                        </th>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr class="thick-end">
+                        <th colspan="2">
+                            <b>Protein</b> 3g
+                        </th>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </div>
-
-    <link  href="http://fonts.googleapis.com/css?family=Cabin:400,500,600,bold" rel="stylesheet" type="text/css" >
-
-    <link  href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css" >
-
+    <link href="http://fonts.googleapis.com/css?family=Cabin:400,500,600,bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css">
     <div id="pagegradient"></div>
-
     <a class="button">
-        <div class="bootstrap-tagsinput"id="1">
-        <span class="tag label label-info"> press here to buy candy</span>
+        <div class="bootstrap-tagsinput" id="1">
+            <span class="tag label label-info"> press here to buy candy</span>
     </a>
     <script>
-        $(document).ready(function(){
+    $(document).ready(function() {
 
 
-            $(".tag").click(function(){
+        $(".tag").click(function() {
 
 
-                alert("You successfully bought candies!");
-            });
-
+            alert("You successfully bought candies!");
         });
+
+    });
     </script>
-    </body>
+</body>
+
 </html>
