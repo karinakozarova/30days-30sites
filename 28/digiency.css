@@ -1,0 +1,145 @@
+body {
+    background-color: dodgerblue;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 600%;
+    text-align: center;
+    padding: 2%;
+}
+
+h2 {
+    font-size: 400%;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 300%;
+}
+
+i {
+    padding-right: 1%;
+}
+
+@media(max-width:760px) {
+    #section1 {
+        padding-bottom: 5%;
+        margin-bottom: 3%;
+        background-color: #1a1a1a;
+    }
+}
+
+@media(min-width:760px) {
+    #section1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-bottom: 5%;
+        margin-bottom: 3%;
+        background-color: #1a1a1a;
+        border-radius: 50px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    color: #1a1a1a;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 45px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 38px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+.columns {
+    font-size: 200%;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label,
+input,
+option,
+textarea,
+select {
+    font-size: 200%;
+    color: #1a1a1a;
+}
