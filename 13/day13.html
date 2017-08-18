@@ -7,271 +7,58 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style>
-            body {
-                color: white !important;
-                text-align: center;
-                margin: 0;
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                font-size: 14px;
-                line-height: 1.428571429;
-                background-color: #484b4c !important;
-            }
-            h1 {
-                text-align: center;
-                font-size: 510%;
-            }
-            p {
-                font-size: 40px; 
-                padding-left: 10%;
-                padding-right: 10%;
-                text-align: center;
-            }
-		
-            .fadeInDown {
-                -webkit-animation-name: fadeInDown;
-                animation-name: fadeInDown;
-            }
-            section {
-                display: block;
-            }
-
-
-                p,
-                h2,
-                h3 {
-                    orphans: 3;
-                    widows: 3;
-                }
-                h2,
-                h3 {
-                    page-break-after: avoid;
-                }
-            }
-            *,
-            *:before,
-            *:after {
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-            }
-            html {
-                font-size: 62.5%;
-                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            }
-            img {
-                vertical-align: middle;
-            }
-            h2,
-            h3,
-            h6 {
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                font-weight: 500;
-                line-height: 1.1;
-            }
-
-            .container {
-                margin-right: auto;
-                margin-left: auto;
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-            .container:before,
-            .container:after {
-                content: " ";
-                display: table;
-            }
-            .container:after {
-                clear: both;
-            }
-            .container:before,
-            .container:after {
-                content: " ";
-                display: table;
-            }
-            .container:after {
-                clear: both;
-            }
-            @media (min-width: 768px) {
-                .container {
-                    width: 750px;
-                }
-            }
-            @media (min-width: 992px) {
-                .container {
-                    width: 970px;
-                }
-            }
-            @media (min-width: 1200px) {
-                .container {
-                    width: 1170px;
-                }
-            }
-            .clearfix:before,
-            .clearfix:after {
-                content: " ";
-                display: table;
-            }
-            .clearfix:after {
-                clear: both;
-            }
-
-
-
-            .clearfix:before,
-            .clearfix:after {
-                content: '\0020';
-                display: block;
-                overflow: hidden;
-                visibility: hidden;
-                width: 0;
-                height: 0;
-            }
-
-            .clearfix:after {
-                clear: both;
-            }
-
-            h2{
-                font-size:430%;
-                color:#222222;
-                font-family: 'Montserrat', sans-serif;
-                font-weight:700;
-                letter-spacing: -1px;
-                margin:0 0 15px 0;
-                text-align:center;
-                text-transform:uppercase;
-            }
-
-            h6{
-                font-size:200%;
-                font-family: 'Open Sans', sans-serif;
-                font-weight:400;
-                text-align:center;
-                margin:0 0 60px 0;
-            }
-
-
-            .main-section{
-                padding:90px 0 110px;
-            }
-
-            /* Clients
-            ---------------------------------*/
-            .main-section.team{
-                padding:85px 0;
-            }
-            .main-section.team h6{
-                margin-bottom:40px;
-            }
-
-
-            /* Team
-            ---------------------------------*/
-            .team-leader-block{
-                max-width:993px;
-                margin:0 auto;
-            }
-            .team-leader-box{
-                width:30.66%;
-                margin-right: 3.82979%;
-                height: 490px;
-                overflow: hidden;
-                text-align: center;
-                float: left;
-            }
-            .team-leader-box span{
-                margin-bottom:24px;
-                display:block;
-            }
-            .team-leader-box:nth-of-type(3n+0){ margin:0;}
-            .team-leader{
-                width:auto;
-                height:auto;
-                position:relative;
-                border-radius:50%;
-                box-shadow:0px 0px 0px 7px rgba(241,241,241,0.80);
-                margin:7px 7px 25px 7px;
-
-            }
-            .team-leader-shadow{
-                transition:all 0.3s ease-in-out;
-                -moz-transition:all 0.3s ease-in-out;
-                -webkit-transition:all 0.3s ease-in-out;
-                border-radius:50%;
-                position:absolute;
-                width:100%;
-                height:100%;
-                z-index:10;
-                border-radius:50%;
-            }
-            .team-leader:hover .team-leader-shadow{
-                box-shadow:inset  0px 0px 0px 148px rgba(17,17,17,0.80);
-            }
-            .team-leader img{
-                display:block;
-                border-radius:50%;
-            }
-
-        </style>
+        <link rel="stylesheet" href="day13.css">
     </head>
 
     <body>
-    <div>
-        <h1>
+        <div>
+            <h1>
             <img src="Mug-with-Beer-PNG-Vector-Clipart-Image.png" style="float:right;margin:0 5px 0 0;height: 60%;padding-left: 2%"/>
             Welcome to King's Beer
         </h1>
-    </div>
-    <hr>
-    <p>
-
-        Beer is the world's oldest  and most widely consumed alcoholic
-        drink; it is the third most popular drink overall, after water and tea.
-        The production of beer is called brewing, which involves the
-        fermentation of sugars, mainly derived from cereal grain starches -
-        most commonly from malted barley, although wheat, maize (corn), and
-        rice are widely used. Most beer is flavoured with hops, which add
-        bitterness and act as a natural preservative, though other flavourings
-        such as herbs or fruit may occasionally be included.</p>
-
-
-    <section class="main-section team" id="team"><!--main-section team-start-->
-        <div class="container">
-            <h2>The beers</h2>
-            <h6>Take a closer look into our awesome beers.</h6>
-            <div class="team-leader-block clearfix">
-                <div class="team-leader-box">
-                    <div class="team-leader">
-                        <div class="team-leader-shadow"></div>
-                        <img src="1.png" height="50%" style="padding-left: 20%" alt="random beer pic">
+        </div>
+        <hr>
+        <p>
+            Beer is the world's oldest and most widely consumed alcoholic drink; it is the third most popular drink overall, after water and tea. The production of beer is called brewing, which involves the fermentation of sugars, mainly derived from cereal grain starches - most commonly from malted barley, although wheat, maize (corn), and rice are widely used. Most beer is flavoured with hops, which add bitterness and act as a natural preservative, though other flavourings such as herbs or fruit may occasionally be included.</p>
+        <section class="main-section team" id="team">
+            <!--main-section team-start-->
+            <div class="container">
+                <h2>The beers</h2>
+                <h6>Take a closer look into our awesome beers.</h6>
+                <div class="team-leader-block clearfix">
+                    <div class="team-leader-box">
+                        <div class="team-leader">
+                            <div class="team-leader-shadow"></div>
+                            <img src="1.png" height="50%" style="padding-left: 20%" alt="random beer pic">
+                        </div>
+                        <h3> Dead Good beer</h3>
+                        <span>the original</span>
                     </div>
-                    <h3> Dead Good beer</h3>
-                    <span>the original</span>
-                </div>
-                <div class="team-leader-box">
-                    <div class="team-leader">
-                        <div class="team-leader-shadow"></div>
-                        <img src="2.png" height="50%" alt="random beer pic">
+                    <div class="team-leader-box">
+                        <div class="team-leader">
+                            <div class="team-leader-shadow"></div>
+                            <img src="2.png" height="50%" alt="random beer pic">
+                        </div>
+                        <h3>Heineken</h3>
+                        <span> the usual</span>
                     </div>
-                    <h3 >Heineken</h3>
-                    <span> the usual</span>
-                </div>
-                <div class="team-leader-box">
-                    <div class="team-leader">
-                        <div class="team-leader-shadow"></div>
-                        <img src="3.png" height="50%" style="padding-left: 20%" alt="random beer pic">
+                    <div class="team-leader-box">
+                        <div class="team-leader">
+                            <div class="team-leader-shadow"></div>
+                            <img src="3.png" height="50%" style="padding-left: 20%" alt="random beer pic">
+                        </div>
+                        <h3>Black Fort</h3>
+                        <span>the special</span>
                     </div>
-                    <h3>Black Fort</h3>
-                    <span>the special</span>
                 </div>
             </div>
-        </div>
-    </section>
-    <p> Not sure if you would enjoy our beers? Come join us for a free beer! <br> <br></p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80946.25654552462!2d-3.5154486969416645!3d50.65366698784586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da69c5dd38015%3A0xeec5401d373d8821!2sDial+A+Drink!5e0!3m2!1sbg!2sbg!4v1502015953092" width="100%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <img src="foor.png" height="100%" style="padding-top: 5%;max-width: 100%;height:auto">
+        </section>
+        <p> Not sure if you would enjoy our beers? Come join us for a free beer!
+            <br>
+            <br>
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80946.25654552462!2d-3.5154486969416645!3d50.65366698784586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da69c5dd38015%3A0xeec5401d373d8821!2sDial+A+Drink!5e0!3m2!1sbg!2sbg!4v1502015953092" width="100%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <img src="foor.png" height="100%" style="padding-top: 5%;max-width: 100%;height:auto">
     </body>
 
     </html>
