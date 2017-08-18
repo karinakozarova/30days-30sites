@@ -1,0 +1,42 @@
+ body {
+     background-color: #1a1a1a;
+     color: white;
+ }
+
+ .image {
+     position: relative;
+     height: auto;
+     width: 100%;
+ }
+
+ h2 {
+     top: 200px;
+     width: 100%;
+     height: auto;
+     text-align: center;
+     font-size: 600% !important;
+ }
+
+ .mobile_h2 span {
+     color: white;
+     letter-spacing: -1px;
+     background: rgb(0, 0, 0);
+     /* fallback color */
+     background: rgba(23, 23, 23, 0.7);
+     background-size: 100%;
+     margin-top: -50%;
+ }
+
+ h2 span {
+     color: white;
+     letter-spacing: -1px;
+     background: rgb(0, 0, 0);
+     /* fallback color */
+     background: rgba(23, 23, 23, 0.7);
+     background-size: 100%;
+     padding: 10px;
+ }
+
+ p {
+     text-align: center;
+ }
