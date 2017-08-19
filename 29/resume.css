@@ -1,0 +1,19 @@
+body{
+    background-color: #1a1a1b;
+    color: aliceblue;
+}
+
+.fullscreen{
+    width: 100%;
+    max-width:100%;
+}
+
+h1 {
+    text-align: center;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+h2{
+    text-align: center;
+}
