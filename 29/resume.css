@@ -53,6 +53,11 @@ h3 {
     p{
         font-size: 220%;
     }
+
+    .c--anim-btn {
+        height: 84px;
+        font: normal normal 7900  1em 12px Arial, sans-serif;
+    }
 }
 
 .c--anim-btn span {
