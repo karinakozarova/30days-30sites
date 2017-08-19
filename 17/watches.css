@@ -1,0 +1,44 @@
+ body {
+     background-color: #040413;
+     color: white;
+     font-family: 'Fredericka the Great', cursive;
+ }
+
+ #watch {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 4%;
+     height: 50%;
+ }
+
+ .btn-circle {
+     width: 20%;
+     height: 20%;
+     text-align: center;
+     padding: 6px 0;
+     font-size: 200%;
+     line-height: 1.428571429;
+     border-radius: 15px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ h1 {
+     font-size: 500%;
+ }
+
+ @media (max-width: 500px) {
+     h1 {
+         font-size: 200%;
+     }
+ }
+
+ @media (min-width: 500px) {
+     @media (max-width: 800px) {
+         h1 {
+             font-size: 300%;
+         }
+     }
+ }
