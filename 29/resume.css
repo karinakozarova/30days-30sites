@@ -27,8 +27,11 @@ h1 {
     overflow:hidden;
 }
 
-h2{
+h2,h3{
     text-align: center;
+}
+h3{
+    padding-top: 2%;
 }
 
 @media (max-width:760px){
@@ -69,3 +72,27 @@ h2{
 i{
     padding-right: 2%;
 }
+
+
+* {box-sizing: border-box}
+
+.container {
+    width: 94%;
+    background-color: #ddd;
+    margin-left: 3%;
+    padding-left: 0%;
+    margin-right: 3%;
+}
+
+.skills {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+    color: white;
+}
+.c {width: 97%; background-color: #ffe000; }
+.ruby {width: 82%; background-color:  #f44336;}
+.html {width: 90%; background-color: #4CAF50; }
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 40%; background-color: #808080;}
+.bootstrap {width: 69%; background-color: #6953ac;}
