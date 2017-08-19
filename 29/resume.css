@@ -45,10 +45,13 @@ h3 {
 
 @media (max-width:760px) {
     h1 {
-        font-size: 140%;
+        font-size: 180%;
     }
     h2 {
-        font-size: 120%;
+        font-size: 160%;
+    }
+    p{
+        font-size: 220%;
     }
 }
 
