@@ -35,3 +35,37 @@ h2{
     h1{font-size: 140%;}
     h2{font-size: 120%;}
 }
+
+.c--anim-btn span {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.c--anim-btn, .c-anim-btn {
+    transition: 0.3s;
+}
+
+.c--anim-btn {
+    height: 64px;
+    font: normal normal 7900 1em/2em Arial,sans-serif;
+    overflow: hidden;
+    width: 100%;
+    background-color: #3b5998;
+    margin: 5%;
+    margin-left: 0%;
+    font-size: 200%;
+}
+
+.c-anim-btn{
+    margin-top: 0em;
+}
+
+.c--anim-btn:hover .c-anim-btn{
+    margin-top: -4em;
+}
+
+i{
+    padding-right: 2%;
+}
