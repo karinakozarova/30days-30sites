@@ -3,11 +3,6 @@ body {
     color: aliceblue;
 }
 
-.fullscreen {
-    width: 100%;
-    max-width: 100%;
-}
-
 .circle-pic {
     -webkit-border-radius: 50%;
     border-radius: 50%;
