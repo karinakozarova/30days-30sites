@@ -1,0 +1,27 @@
+ body{
+        background-color: #4caf50;
+        color: white;
+        font-family: "Bikham Cyr Script";
+    }
+    h1{
+        text-align: center;
+        font-size: 700%;
+    }
+    h2{
+        text-align: center;
+        font-size: 500%;
+        font-family: "Arial Rounded MT Bold";
+    }
+    p{
+        font-family: "Arial Rounded MT Bold";
+        font-size: 500%;
+        text-align: center;
+        padding: 5%;
+    }
+    div{
+        max-width: 50%;
+    }
+    span{
+        font-family: "Bikham Cyr Script";
+        font-size: 200%;
+    }
