@@ -21,7 +21,7 @@
 <a href = "http://karinakozarova.me/30days-30sites/19/day19.html"> Candy(day nineteen) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/20/day20.html"> Blog landing page (day twenty) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/21/day21.html"> Email newsletter (day twenty one) </a>  <br>
-
+<a href = "http://karinakozarova.me/30days-30sites/22/day22.html"> Weightloss product/program (day twenty twoAdded) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/23/day23.html"> Gardener/Landscaper(day twenty three) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/24/day24.html"> Online shop(day 24) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/25/day25.html"> Recipe site (day twenty five) </a>  <br>
@@ -29,7 +29,6 @@
 <a href = "http://karinakozarova.me/30days-30sites/27/day27.html"> TV show (day twenty seven) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/28/day28.html">Digital agency(day twenty eight) </a>  <br>
 <a href = "http://karinakozarova.me/30days-30sites/29/day29.html"> Online resume (day twenty nine) </a>  <br>
+<a href = "http://karinakozarova.me/30days-30sites/30/day30.html"> 404 page (day thirty) </a>  <br>
 
-To be done: <br>
-<a href = "http://karinakozarova.me/30days-30sites/22/day22.html"> Weightloss product/program (day 22) </a>  <br>
 
